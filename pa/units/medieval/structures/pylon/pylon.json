@@ -22,7 +22,8 @@
 		"UNITTYPE_FabBuild",
 		"UNITTYPE_Economy",
 		"UNITTYPE_Custom8",
-		"UNITTYPE_Custom9"
+		"UNITTYPE_Custom9",
+		"UNITTYPE_Custom10"
 	],
 	"recon": {
 		"observer": {

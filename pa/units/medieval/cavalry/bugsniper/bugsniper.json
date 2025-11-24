@@ -47,7 +47,21 @@
                 0,
                 0
             ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/units/medieval/structures/arcmage_tower/soul_blue.pfx",
+            "bone": "bone_root",
+            "offset": [
+                0,0,0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
         }
+        
     ],
   "audio": {
     "loops": {
@@ -141,9 +155,9 @@
   ],
  
   "mesh_bounds": [
-    6.5,
-    7,
-    7.6
+    10,
+    10,
+    13
   ],
   "model": {
     "filename": "/pa/units/medieval/cavalry/bugsniper/bug_sniper.papa",
@@ -155,16 +169,17 @@
     "animtree": "/pa/units/medieval/cavalry/bugsniper/bipedal_mech_anim_tree.json"
   },
   "navigation": {
-    "type": "hover",
-    "acceleration": 120,
-    "brake": -1,
-    "move_speed": 12,
-    "turn_speed": 200,
-    "group_preference": "back"
-  },
+        "type": "hover",
+        "acceleration": 120,
+        "brake": 120,
+        "move_speed": 12,
+        "turn_speed": 200,
+        "turn_in_place": true
+    },
   "nearby_target_tick_update_interval": 15,
   "physics": {
-    "radius": 3.5
+    "radius": 9,
+    "sync_radius_to_extents": true
   },
   "recon": {
     "observer": {
@@ -179,7 +194,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 11.0
+    "diameter": 15.0
   },
   "tools": [
     {

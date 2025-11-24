@@ -20,6 +20,7 @@
         "UNITTYPE_FabBuild",
         "UNITTYPE_FabAdvBuild",
         "UNITTYPE_Economy",
+        "UNITTYPE_Custom10",
         "UNITTYPE_Custom9",
         "UNITTYPE_Custom8"
     ],

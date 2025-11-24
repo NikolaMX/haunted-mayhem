@@ -53,12 +53,13 @@
     "wait_to_rolloff_time": 0,
     "factory_cooldown_time": 4,
     "factory": {
-    "store_units": false,
+    "deploy_projectile": "/pa/units/medieval/structures/firemage_tower/spawn_proj.json",
     "spawn_points": [
-      "bone_root"
+      "bone_spawn"
     ],
     "default_build_stance": "Continuous"
   },
+ 
 "feature_snap_ignores_pathability": true,
  "placement_size": [
         65,
@@ -112,22 +113,22 @@
     },
     "fx_offsets": [
         {
-            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_center_bulb.pfx",
+            "filename": "/pa/units/medieval/structures/firemage_tower/edison_center_bulb_red.pfx",
             "bone": "bone_pfx_0",
             "type": "idle"
         },
         {
-            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_aux_bulb.pfx",
+            "filename": "/pa/units/medieval/structures/firemage_tower/edison_aux_bulb_red.pfx",
             "bone": "bone_pfx_1",
             "type": "idle"
         },
         {
-            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_aux_bulb.pfx",
+            "filename": "/pa/units/medieval/structures/firemage_tower/edison_aux_bulb_red.pfx",
             "bone": "bone_pfx_2",
             "type": "idle"
         },
         {
-            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_aux_bulb.pfx",
+            "filename": "/pa/units/medieval/structures/firemage_tower/edison_aux_bulb_red.pfx",
             "bone": "bone_pfx_3",
             "type": "idle"
         },

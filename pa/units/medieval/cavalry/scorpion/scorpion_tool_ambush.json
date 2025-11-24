@@ -1,0 +1,57 @@
+{
+    "ammo_id": "/pa/units/medieval/cavalry/scorpion/scorpion_ammo_ambush.json",
+  "ammo_capacity": 15,
+  "ammo_demand": 1,
+  "start_fully_charged": false,
+  "ammo_per_shot": 15,
+  "ammo_source": "time",
+  "self_destruct": true,
+
+
+
+  "auto_attack": true,
+  "no_busy_auto_attack": false,
+  
+  
+  "firing_arc_yaw": 0,
+  "firing_standard_deviation": 0.5,
+  "max_firing_velocity": 200,
+  "max_range": 100,
+  "min_firing_velocity": 60,
+  "idle_aim_delay": 1.0,
+  "physics": {
+    "radius": 1,
+    "gravity_scalar": 1,
+    "add_to_spatial_db": false
+  },
+  "pitch_range": 90,
+  "pitch_rate": 3600,
+  "delay": 0.5,
+  "rate_of_fire": 10,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_Seafloor",
+    "WL_WaterSurface",
+    "WL_Underwater"
+  ],
+  "yaw_range": 180,
+  "yaw_rate": 3600,
+
+
+
+
+  "arc_type": "ARC_high",
+  "base_spec": "/pa/tools/base_missile_tactical_turret/base_missile_tactical_turret.json",
+  "firing_arc_pitch": 60,
+  
+  
+  
+  "manual_fire": true,
+  
+ 
+  
+ 
+ 
+ 
+  "tool_type": "TOOL_Weapon"
+}

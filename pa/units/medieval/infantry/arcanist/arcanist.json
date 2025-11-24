@@ -22,6 +22,7 @@
             ]
         }
     },
+   
     "buildable_types": "(Land & Structure & Basic | Land & Structure & Advanced | Factory & Basic | Factory & Advanced & Bot & Land | FabBuild) & Custom8",
     "unit_types": [
         "UNITTYPE_Custom8",
@@ -101,6 +102,19 @@
                 0,
                 -4,
                 2.5
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+         {
+            "type": "idle",
+            "filename": "/pa/units/medieval/structures/arcmage_tower/soul_blue.pfx",
+            "bone": "bone_root",
+            "offset": [
+                0,0,0
             ],
             "orientation": [
                 0,

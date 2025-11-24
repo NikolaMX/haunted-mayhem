@@ -30,13 +30,7 @@
     "ORDER_Assist",
     "ORDER_Use"
   ],
-        "replaceable_units": [
-        "/pa/units/medieval/structures/mana_shrine/mana_shrine.json"
-    ],
-  "force_snap_to_feature_orientation": true,
-   "feature_requirements": [
-    "control_point"
-  ],
+
     "buildable_types": "Custom8 & FactoryBuild & Tactical & LaserPlatform",
     "rolloff_dirs": [
         [
@@ -53,13 +47,27 @@
     "wait_to_rolloff_time": 0,
     "factory_cooldown_time": 4,
     "factory": {
-    "store_units": false,
+    "deploy_projectile": "/pa/units/medieval/structures/arcmage_tower/spawn_proj_blue.json",
     "spawn_points": [
-      "bone_root"
+      "bone_spawn"
     ],
     "default_build_stance": "Continuous"
   },
+
+
+
 "feature_snap_ignores_pathability": true,
+        "replaceable_units": [
+        "/pa/units/medieval/structures/mana_shrine/mana_shrine.json"
+    ],
+  "force_snap_to_feature_orientation": true,
+   "feature_requirements": [
+    "control_point"
+  ],
+
+
+
+
  "placement_size": [
         65,
         65

@@ -2,7 +2,7 @@
   "si_name":"guardian",
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
   "display_name": "Guardian",
-  "description": "!LOC:Shielded. Durable.",
+  "description": "!LOC:Shielded. Durable. Ignores Infantry armour",
   "armor_type": "AT_Custom3",
   "max_health": 300,
   "build_metal_cost": 250,

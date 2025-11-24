@@ -1,8 +1,8 @@
 {
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "unit_name": "!Mana Shrine",
-    "display_name": "!LOC:Mana Shrine",
-    "description": "!LOC:Does something with mana, what is not decided yet.",
+    "unit_name": "!Mana Extractor",
+    "display_name": "!LOC:Mana Extractor",
+    "description": "!LOC:Required to build and run magical units. Can only be built on Mana Crystals",
    
     "atrophy_rate": 2.5,
     "atrophy_cool_down": 15.0,
@@ -13,24 +13,24 @@
         "control_point"
     ],
     "replaceable_units": [
-        "/pa/units/medieval/structures/catalyst/catalyst.json",
-        "/pa/units/medieval/structures/tavern/tavern.json",
-        "/pa/units/medieval/structures/mage_tower/mage_tower.json",
-        "/pa/units/medieval/structures/mage_tower/mage_tower_c.json",
-        "/pa/units/medieval/structures/spawn_cav/spawn_cav.json",
-        "/pa/units/medieval/structures/spawn8/spawn8.json"
+
+        "/pa/units/medieval/structures/arcmage_tower/arcmage_tower.json",
+        "/pa/units/medieval/structures/fogmage_tower/fogmage_tower.json",
+        "/pa/units/medieval/structures/firemage_tower/firemage_tower.json"
+     
 
     ],
     "force_snap_to_feature_orientation": true,
     "area_build_type": "Sphere",
     "production": {
-        "energy": 25
+        "energy": 50
     },
     "strategic_icon_priority": 5,
     "consumption": {
         "energy": 0
     },
     "unit_types": [
+        "UNITTYPE_Custom10",
         "UNITTYPE_Custom9",
         "UNITTYPE_Custom8",
         "UNITTYPE_Structure",

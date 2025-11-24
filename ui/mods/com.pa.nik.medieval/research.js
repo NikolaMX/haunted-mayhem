@@ -11,6 +11,11 @@ model.unitsToLock = [
     //Cabal Initial Factories
                     "/pa/units/medieval/structures/factory_infantry/factory_infantry_c.json",
                     "/pa/units/medieval/structures/factory_ranged/factory_ranged_c.json",   
+
+
+    //Vesperin Factories
+                    "/pa/units/medieval/structures/factory_ranged/factory_ranged.json",   
+
     //Cabal Infantry
                     "/pa/units/medieval/infantry/sword_dox/sword_dox.json",           
                     "/pa/units/medieval/infantry/assassin/assassin.json",
@@ -38,6 +43,7 @@ model.unitsToLock = [
     //Cabal Spiders
                     "/pa/units/medieval/cavalry/big_spider/big_spider.json",
                     "/pa/units/medieval/cavalry/jumping_spider/jumping_spider.json",
+                    "/pa/units/medieval/cavalry/scorpion/scorpion.json",
     //Cabal SpiderWeb
                     "/pa/units/medieval/structures/web_mine/web_mine.json",
 
@@ -83,17 +89,22 @@ model.unitsToLock = [
                     "/pa/units/medieval/research/cabal/ghosts/ghosts_t2.json",
                     "/pa/units/medieval/research/cabal/ghosts/ghosts_t3.json",
 
+//---------------------------------------------VESPERIN-----------------------------------------------
+    //Vesperin Ranged
+                    "/pa/units/medieval/infantry/longbow/longbow.json",
+                    "/pa/units/medieval/infantry/composite/composite.json",
+ 
 
-    //Cabal Snakes
-                    
+//Vesperin Snakes
                     "/pa/units/medieval/cavalry/snake/snake.json",
                     "/pa/units/medieval/flying/flying_snake/flying_snake.json",
-     //Cabal Snakes Research
-
+    //Vesperin Snakes Research
                     "/pa/units/medieval/research/vesperin/snakes/snakes_t2.json",
                     "/pa/units/medieval/research/vesperin/snakes/snakes_t3.json",
 
-
+    //Vesperin Ranged Research
+                    "/pa/units/medieval/research/vesperin/ranged/ranged_t2.json",
+                    "/pa/units/medieval/research/vesperin/ranged/ranged_t3.json",
 
                     //---------------------------IMPERIA----------------------------
 
@@ -259,14 +270,15 @@ model.unlockPairs = [
     false],
      //Cabal Spiders T2
     ["/pa/units/medieval/research/vesperin/spiders/spiders_t2.json",
-    [        "/pa/units/medieval/structures/web_mine/web_mine.json",
+    [   "/pa/units/medieval/cavalry/big_spider/big_spider.json",     
+        "/pa/units/medieval/structures/web_mine/web_mine.json",
         "/pa/units/medieval/research/vesperin/spiders/spiders_t3.json"    
                 ],
     ["/pa/units/medieval/research/vesperin/spiders/spiders_t2.json"],
     false],
      //Cabal Spiders T3
     ["/pa/units/medieval/research/vesperin/spiders/spiders_t3.json",
-    ["/pa/units/medieval/cavalry/big_spider/big_spider.json"   
+    [   "/pa/units/medieval/cavalry/scorpion/scorpion.json"   
                 ],
     ["/pa/units/medieval/research/vesperin/spiders/spiders_t3.json"],
     false],
@@ -526,28 +538,50 @@ model.unlockPairs = [
 //Snakes
 
 //Serpent Shrine
-["/pa/units/medieval/research/vesperin/snakes/snakes_t1.json",
+    ["/pa/units/medieval/research/vesperin/snakes/snakes_t1.json",
     ["/pa/units/medieval/structures/serpent_shrine/serpent_shrine.json",
          "/pa/units/medieval/research/vesperin/snakes/snakes_t2.json"
                 ],
     ["/pa/units/medieval/research/vesperin/snakes/snakes_t1.json"],
     false],  
 //Lightning Elemental
-["/pa/units/medieval/research/vesperin/snakes/snakes_t2.json",
+    ["/pa/units/medieval/research/vesperin/snakes/snakes_t2.json",
     ["/pa/units/medieval/cavalry/snake/snake.json",
          "/pa/units/medieval/research/vesperin/snakes/snakes_t3.json"
                 ],
     ["/pa/units/medieval/research/vesperin/snakes/snakes_t2.json"],
     false],  
 //Arcanist
-["/pa/units/medieval/research/vesperin/snakes/snakes_t3.json",
+    ["/pa/units/medieval/research/vesperin/snakes/snakes_t3.json",
     ["/pa/units/medieval/flying/flying_snake/flying_snake.json"
                 ],
     ["/pa/units/medieval/research/vesperin/snakes/snakes_t3.json"],
     false],  
 
+//Ranged
+    ["/pa/units/medieval/research/vesperin/ranged/ranged_t1.json",
+    [
+        "/pa/units/medieval/structures/factory_ranged/factory_ranged.json",
+        "/pa/units/medieval/research/vesperin/ranged/ranged_t2.json"
+                ],
+    ["/pa/units/medieval/research/vesperin/ranged/ranged_t1.json"],
+    false],  
 
 
+    ["/pa/units/medieval/research/vesperin/ranged/ranged_t2.json",
+    [
+        "/pa/units/medieval/infantry/longbow/longbow.json",
+        "/pa/units/medieval/research/vesperin/ranged/ranged_t3.json"
+                ],
+    ["/pa/units/medieval/research/vesperin/ranged/ranged_t2.json"],
+    false],  
+
+["/pa/units/medieval/research/vesperin/ranged/ranged_t3.json",
+    [
+        "/pa/units/medieval/infantry/composite/composite.json"
+                ],
+    ["/pa/units/medieval/research/vesperin/ranged/ranged_t3.json"],
+    false],  
 
 ]
 

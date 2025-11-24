@@ -36,12 +36,12 @@
                   "transition_forward": {
                     "func": "is_moving",
                     "target": "walking",
-                    "duration": 0.2
+                    "duration": 0.3
                   },
                   "transition_reverse": {
                     "func": "is_moving",
                     "target": "walking",
-                    "duration": 0.2
+                    "duration": 0.3
                   }
                 },
                 {
@@ -167,11 +167,13 @@
                 {
                   "transition_forward": {
                     "func": "anim_complete",
-                    "target": "idle"
+                    "target": "idle",
+                    "duration": 0.2
                   },
                   "transition_reverse": {
                     "func": "anim_complete",
-                    "target": "idle"
+                    "target": "idle",
+                    "duration": 0.2
                   }
                 },
                 {
@@ -244,8 +246,10 @@
         }
       },
       "dead": {
-        "type": "bind_pose"
-      },
+                "type": "playback",
+                "looping": false,
+                "anim_name": "death01"
+            },
       "ghost": {
         "type": "bind_pose"
       }

@@ -38,6 +38,7 @@ var paeiouIcons = [
     "spider",
     "big_spider",
     "jumping_spider",
+    "scorpion",
     
     "hound",
 

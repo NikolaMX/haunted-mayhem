@@ -77,6 +77,7 @@
     "/pa/units/medieval/cavalry/spider/spider.json",
     "/pa/units/medieval/cavalry/big_spider/big_spider.json",
     "/pa/units/medieval/cavalry/jumping_spider/jumping_spider.json",
+    "/pa/units/medieval/cavalry/scorpion/scorpion.json",
 
     "/pa/units/medieval/cavalry/hound/hound.json",
     "/pa/units/medieval/cavalry/snake/snake.json",
@@ -185,7 +186,10 @@
         "/pa/units/medieval/research/cabal/infantry/halbeard.json",
 
 
-     
+       "/pa/units/medieval/research/vesperin/ranged/ranged_t1.json",
+    "/pa/units/medieval/research/vesperin/ranged/ranged_t2.json",
+    "/pa/units/medieval/research/vesperin/ranged/ranged_t3.json",
+
 
 
     "/pa/units/medieval/research/vesperin/spiders/spiders_t1.json",

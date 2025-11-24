@@ -11,7 +11,7 @@
     "metal": 30
   },
   "auto_reclaim": true,
-  "max_range": 45,
+  "max_range": 55,
   "pitch_range": 90,
   "pitch_rate": 90,
   "reclaim_layers": [

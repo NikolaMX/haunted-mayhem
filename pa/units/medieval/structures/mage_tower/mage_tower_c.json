@@ -25,7 +25,7 @@
   },
   "tools": [
     {
-      "spec_id": "/pa/units/medieval/structures/factory_infantry/factory_infantry_build_arm.json",
+      "spec_id": "/pa/units/medieval/structures/mage_tower/mage_tower_c_build_arm.json",
       "aim_bone": "bone_root"
     }
   ],

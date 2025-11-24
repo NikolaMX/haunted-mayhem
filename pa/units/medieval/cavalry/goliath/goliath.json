@@ -46,14 +46,16 @@
     }
   ],
   "guard_layer": "WL_AnyHorizontalGroundOrWaterSurface",
+  "has_death_effects": true,
   "model": {
-    "filename": "/pa/units/medieval/cavalry/goliath/imperial_theta.papa",
+    "filename": "/pa/units/medieval/cavalry/goliath/goliathX.papa",
     "animations": {
-      "walk": "/pa/units/medieval/cavalry/goliath/goliath_anim_walk.papa",
-      "idle": "/pa/units/medieval/cavalry/goliath/goliath_anim_idle.papa",
-      "walk_stop": "/pa/units/medieval/cavalry/goliath/goliath_anim_walkStop.papa",
+      "death01": "/pa/units/medieval/cavalry/goliath/goliath_anim_dead.papa",
+      "walk": "/pa/units/medieval/cavalry/goliath/goliath_anim_walkX.papa",
+      "idle": "/pa/units/medieval/cavalry/goliath/goliath_anim_idleX.papa",
+      "walk_stop": "/pa/units/medieval/cavalry/goliath/goliath_anim_walkStopX.papa",
       "aim_down": "/pa/units/commanders/imperial_base/imperial_base_anim_aimDown.papa",
-      "firing": "/pa/units/medieval/cavalry/goliath/goliath_anim_hit1.papa"
+      "firing": "/pa/units/medieval/cavalry/goliath/goliath_anim_hit1X.papa"
     },
     "animtree": "/pa/units/medieval/cavalry/goliath/goliath_anim_tree.json",
     "walk_speed": 6
@@ -107,7 +109,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 16.6
+    "diameter": 20
   },
   "physics": {
     "radius": 9,
@@ -204,5 +206,10 @@
     10,
     10,
     12
-  ]
+  ],
+   "death": {
+    "decals": [
+      "/pa/effects/decal/scorch_red_decal_big.json"
+    ]
+  }
 }

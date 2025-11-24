@@ -72,13 +72,13 @@ var newBuild = {
     //Mercanaries
     
     
-    "/pa/units/medieval/infantry/champion/champion.json": ["t_t_factory", 0, { row: 1, column: 0 }],
+    "/pa/units/medieval/infantry/champion/champion.json": ["t_m_factory", 0, { row: 1, column: 0 }],
 
-    "/pa/units/medieval/infantry/zweihander/zweihander.json": ["t_t_factory", 0, { row: 2, column: 0 }],
-    "/pa/units/medieval/infantry/javelin/javelin.json": ["t_t_factory", 0, { row: 2, column: 1 }],
-    "/pa/units/medieval/infantry/guardian/guardian.json": ["t_t_factory", 0, { row: 2, column: 2 }],
+    "/pa/units/medieval/infantry/zweihander/zweihander.json": ["t_m_factory", 0, { row: 2, column: 0 }],
+    "/pa/units/medieval/infantry/javelin/javelin.json": ["t_m_factory", 0, { row: 2, column: 1 }],
+    "/pa/units/medieval/infantry/guardian/guardian.json": ["t_m_factory", 0, { row: 2, column: 2 }],
 
-    "/pa/units/medieval/cavalry/goliath/goliath.json": ["t_t_factory", 0, { row: 0, column: 0 }],
+    "/pa/units/medieval/cavalry/goliath/goliath.json": ["t_m_factory", 0, { row: 0, column: 0 }],
 
 
 //Cabal
@@ -203,6 +203,7 @@ var newBuild = {
         "/pa/units/medieval/cavalry/spider/spider.json": ["c_s_factory", 0, { row: 2, column: 1 }],
         "/pa/units/medieval/cavalry/big_spider/big_spider.json": ["c_s_factory", 0, { row: 0, column: 1 }],
         "/pa/units/medieval/cavalry/jumping_spider/jumping_spider.json": ["c_s_factory", 0, { row: 1, column: 1 }],
+        "/pa/units/medieval/cavalry/scorpion/scorpion.json": ["c_s_factory", 0, { row: 0, column: 0 }],
     
         //Snakes
         "/pa/units/medieval/cavalry/mini_snake/mini_snake.json": ["v_s_factory", 0, { row: 2, column: 0 }],
@@ -239,6 +240,12 @@ var newBuild = {
     "/pa/units/medieval/research/cabal/ghosts/ghosts_t1.json": ["c_m_factory", 0, { row: 2, column: 5 }],
 
 
+//Vesperin Research
+
+    //Ranged
+    "/pa/units/medieval/research/vesperin/ranged/ranged_t1.json": ["v_research", 0, { row: 2, column: 2 }],
+    "/pa/units/medieval/research/vesperin/ranged/ranged_t2.json": ["v_research", 0, { row: 1, column: 2 }],
+    "/pa/units/medieval/research/vesperin/ranged/ranged_t3.json": ["v_research", 0, { row: 0, column: 2 }],
 
      //Spiders
     "/pa/units/medieval/research/vesperin/spiders/spiders_t3.json": ["v_research", 0, { row: 0, column: 4 }],

@@ -63,7 +63,7 @@
     },
     "animtree": "/pa/units/medieval/cavalry/spider/spider_anim_tree.json",
     "filename": "/pa/units/medieval/cavalry/jumping_spider/rhino.papa",
-    "walk_speed": 3
+    "walk_speed": 6
   },
   "navigation": {
     "acceleration": 80,
@@ -120,14 +120,14 @@
   "audio": {
     "loops": {
       "move": {
-        "cue": "/SE/Movement/bot/T2_bot_bomb_loop",
+        "cue": "/SE/Movement/bot/spark_loop",
         "flag": "vel_changed",
         "should_start_func": "is_moving",
         "should_stop_func": "is_not_moving"
       }
     },
     "selection_response": {
-      "cue": "/SE/Selection/bot/bot_bomb"
+      "cue": "/SE/Selection/bot/spark"
     }
   },
   "TEMP_texelinfo": 6.38702,

@@ -23,11 +23,11 @@
   },
  "unit_types": [
     "UNITTYPE_Custom8",
-    "UNITTYPE_Tank",
+    "UNITTYPE_Bot",
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
     "UNITTYPE_Land",
-    "UNITTYPE_Tactical",
+    "UNITTYPE_Basic",
     "UNITTYPE_FactoryBuild"
   ],
   "transportable": {
@@ -63,11 +63,6 @@
         }
       ]
     }
-  },
-   "death": {
-    "decals": [
-      "/pa/effects/decal/scorch_red_decal.json"
-    ]
   },
    "has_death_effects": true,
   "model": {
@@ -122,5 +117,10 @@
     2,
     8
   ],
-  "TEMP_texelinfo": 4.07719
+  "TEMP_texelinfo": 4.07719,
+   "death": {
+    "decals": [
+      "/pa/effects/decal/scorch_red_decal.json"
+    ]
+  }
 }

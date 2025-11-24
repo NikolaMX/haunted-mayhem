@@ -101,6 +101,7 @@
             ]
         }
     },
+    "has_death_effects": true,
     "model": {
         "filename": "/pa/units/medieval/cavalry/gorilla/gorilla.papa",
         "animations": {

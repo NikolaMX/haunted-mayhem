@@ -105,5 +105,10 @@
     "UNITTYPE_Basic",
     "UNITTYPE_FactoryBuild",
     "UNITTYPE_Custom8"
-  ]
+  ],
+   "death": {
+    "decals": [
+      "/pa/effects/decal/scorch_red_decal.json"
+    ]
+  }
 }

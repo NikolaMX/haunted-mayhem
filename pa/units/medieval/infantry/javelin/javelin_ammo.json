@@ -1,6 +1,6 @@
 {
   "base_spec": "/pa/ammo/base_ranged/base_ranged.json",
-  "damage": 60,
+  "damage": 150,
   "armor_damage_map": {
     
 

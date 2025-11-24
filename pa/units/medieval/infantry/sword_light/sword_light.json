@@ -1,5 +1,5 @@
 {
-  "si_name":"sword_light",
+  "si_name": "sword_light",
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
   "display_name": "Swordsman",
   "description": "!LOC:Unarmoured. The most basic infantry unit.",
@@ -63,10 +63,11 @@
       ]
     }
   },
+  "has_death_effects": true,
   "model": {
     "filename": "/pa/units/medieval/infantry/sword_light/sword_light.papa",
     "animations": {
-      "death01": "/pa/units/medieval/infantry/sword_dox/assault_bot_anim_death01.papa",
+      "death": "/pa/units/medieval/infantry/axe_dox/axe_dox_anim_dead.papa",
       "walk": "/pa/units/medieval/infantry/sword_light/sword_light_anim_run.papa",
       "idle": "/pa/units/medieval/infantry/dual_sword/assault_bot_anim_idle.papa",
       "firing": "/pa/units/medieval/infantry/sword_light/sword_light_anim_stab.papa"
@@ -115,5 +116,11 @@
     2,
     4
   ],
-  "TEMP_texelinfo": 4.07719
+  "TEMP_texelinfo": 4.07719,
+  
+   "death": {
+    "decals": [
+      "/pa/effects/decal/scorch_red_decal.json"
+    ]
+  }
 }

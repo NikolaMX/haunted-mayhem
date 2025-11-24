@@ -126,6 +126,21 @@
             "cue": "/SE/Selection/bot/sub_commander"
         }
     },
+    "fx_offsets": [
+               {
+            "type": "idle",
+            "filename": "/pa/units/medieval/cavalry/fire_elemental/soul.pfx",
+            "bone": "bone_root",
+            "offset": [
+                0,0,0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        }
+    ],
     "selection_icon": {
         "diameter": 15.0
     },

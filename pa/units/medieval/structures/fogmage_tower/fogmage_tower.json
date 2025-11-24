@@ -52,10 +52,10 @@
     ],
     "wait_to_rolloff_time": 0,
     "factory_cooldown_time": 4,
-    "factory": {
-    "store_units": false,
+     "factory": {
+    "deploy_projectile": "/pa/units/medieval/structures/fogmage_tower/spawn_proj.json",
     "spawn_points": [
-      "bone_root"
+      "bone_spawn"
     ],
     "default_build_stance": "Continuous"
   },
@@ -240,7 +240,7 @@
     "tools": [
         
         {
-            "spec_id": "/pa/units/medieval/structures/firemage_tower/firemage_tower_build_arm.json",
+            "spec_id": "/pa/units/medieval/structures/fogmage_tower/fogmage_tower_build_arm.json",
             "aim_bone": "bone_root"
         }
     ],
