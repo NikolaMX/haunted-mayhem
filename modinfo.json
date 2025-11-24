@@ -1,6 +1,6 @@
 {
 	"context": "server",
-	"identifier": "com.pa.nik.medieval_dev",
+	"identifier": "medieval_mode_dev",
 	"display_name": "Medieval Server Local",
 	"description": "Adds a high-tech Energy-based Faction. Development Ongoing",
 	"author": "NikolaMX",
