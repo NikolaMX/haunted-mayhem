@@ -2,8 +2,8 @@
 
   {
     "base_spec":"/pa/units/land/base_vehicle/base_vehicle.json",
-    "display_name":"!LOC:Great Serpent Unlock",
-    "description":"!LOC:Allows you to build beast-slaying Great Serpents",
+    "display_name":"!LOC:Longbow Archer T2 Unlock",
+    "description":"!LOC:Very long range, shoots arcing projectiles that deal very high damage. Good against slow moving formations",
     "si_name": "empty",
     "build_metal_cost": 1200,
     "add_to_spatial_db": false,
