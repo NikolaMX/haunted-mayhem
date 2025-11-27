@@ -36,7 +36,7 @@
   "guard_radius": 100,
   "guard_layer": "WL_AnySurface",
   "navigation": {
-    "aggressive_distance":100.0,
+    "aggressive_distance": 110.0,
     "type": "land-small",
     "acceleration": 9,
     "brake": 9,
@@ -74,7 +74,7 @@
     "animtree": "/pa/units/medieval/cavalry/heavy_cav/heavy_cav_anim_tree.json",
     "walk_speed": 100
   },
-  "attack_range_frac": 0.5,
+  "attack_range_frac": 0.9,
   "tools": [
     {
       "spec_id": "/pa/units/medieval/cavalry/recurve_cav/recurve_cav_tool_weapon.json",

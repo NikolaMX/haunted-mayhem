@@ -225,6 +225,7 @@
         "UNITTYPE_Tactical",
         "UNITTYPE_Artillery",
         
+        "UNITTYPE_Offense",
         "UNITTYPE_Mobile",
         "UNITTYPE_Land",
         "UNITTYPE_Advanced",

@@ -312,21 +312,21 @@ model.unlockPairs = [
 
     
 //Ghosts
-    //Spectral Shrine T1
+    //Spectral Shrine T1 - Ghost & Ghost Mage
     ["/pa/units/medieval/research/cabal/ghosts/ghosts_t1.json",
     ["/pa/units/medieval/structures/spectral_shrine/spectral_shrine.json",
         "/pa/units/medieval/research/cabal/ghosts/ghosts_t2.json"
                 ],
     ["/pa/units/medieval/research/cabal/ghosts/ghosts_t1.json"],
     false],
-    //Pumpkin Witch T2
+    //Spectral Shrine T2 - Phantom
     ["/pa/units/medieval/research/cabal/ghosts/ghosts_t2.json",
     ["/pa/units/medieval/infantry/phantom/phantom.json",
         "/pa/units/medieval/research/cabal/ghosts/ghosts_t3.json"
                 ],
     ["/pa/units/medieval/research/cabal/ghosts/ghosts_t2.json"],
     false],
-    //Pumpkin Guardian T3
+    //Spectral Shrine T3 - Spectral Wyrm
     ["/pa/units/medieval/research/cabal/ghosts/ghosts_t3.json",
     ["/pa/units/medieval/flying/flying_serpent/flying_serpent.json" 
                 ],
