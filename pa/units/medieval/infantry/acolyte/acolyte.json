@@ -4,7 +4,7 @@
     "description": "!LOC:Undead. Constructs buildings. Reclaims corpses. CAN NOT ASSIST. Can sacrifice itself with alt-fire near shrines to help spawn monsters faster.",
     "strategic_icon_priority": 0,
     "wreckage_health_frac": 0,
-    "max_health": 200,
+    "max_health": 300,
     "build_metal_cost": 350,
     "show_in_orbital_layer": true,
     "armor_type": "AT_Custom9",
@@ -52,7 +52,7 @@
         "type": "land-small",
         "acceleration": 120,
         "brake": 120,
-        "move_speed": 8,
+        "move_speed": 14,
         "turn_speed": 180,
         "turn_in_place": true
     },

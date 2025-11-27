@@ -1,12 +1,12 @@
 {
-    "si_name": "wall",
+    "si_name": "walls",
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
     "unit_name": "Fortification",
     "display_name": "!LOC:Fortification",
     "description": "!LOC:Advanced Barrier - Blocks units and projectiles.",
-    "max_health": 1500,
+    "max_health": 300,
     
-    "build_metal_cost": 50,
+    "build_metal_cost": 10,
     "atrophy_rate": 20.0,
     "atrophy_cool_down": 0.5,
     "wreckage_health_frac": 0.0,
@@ -76,6 +76,7 @@
         ]
     ],
     "unit_types": [
+        "UNITTYPE_Custom9",
         "UNITTYPE_CmdBuild",
         "UNITTYPE_FabAdvBuild",
         "UNITTYPE_Structure",

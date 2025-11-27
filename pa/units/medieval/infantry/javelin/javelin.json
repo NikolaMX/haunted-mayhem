@@ -6,7 +6,7 @@
   "armor_type": "AT_Custom1",
   "max_health": 150,
   "build_metal_cost": 250,
-  "wreckage_health_frac": 0,
+  "wreckage_health_frac": 1,
   "attachable": {
     "offsets": {
       "root": [
@@ -35,7 +35,7 @@
   "transportable": {
     "size": 1
   },
-  "guard_radius": 30,
+  "guard_radius": 50,
   "guard_layer": "WL_AnySurface",
   "navigation": {
     "aggressive_distance": 40,
@@ -46,7 +46,7 @@
     "turn_speed": 90
   },
   "physics": {
-    "radius": 2.0
+    "radius": 3.0
   },
   "recon": {
     "observer": {
@@ -113,8 +113,8 @@
     "diameter": 8.0
   },
   "mesh_bounds": [
-    4,
-    2,
+    5,
+    5,
     8
   ],
   "TEMP_texelinfo": 4.07719,

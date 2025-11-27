@@ -11,7 +11,7 @@ model.unitsToLock = [
     //Cabal Initial Factories
                     "/pa/units/medieval/structures/factory_infantry/factory_infantry_c.json",
                     "/pa/units/medieval/structures/factory_ranged/factory_ranged_c.json",   
-
+                    "/pa/units/medieval/structures/factory_cav/factory_cav_c.json",
 
     //Vesperin Factories
                     "/pa/units/medieval/structures/factory_ranged/factory_ranged.json",   

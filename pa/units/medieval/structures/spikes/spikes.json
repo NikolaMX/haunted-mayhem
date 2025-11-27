@@ -3,9 +3,9 @@
     "unit_name": "Spikes",
     "display_name": "!LOC:Spikes",
     "description": "!LOC:Barrier - Blocks most units.",
-    "max_health": 1000,
+    "max_health": 100,
     "build_energy_cost": 300,
-    "build_metal_cost": 25,
+    "build_metal_cost": 5,
     "atrophy_rate": 20.0,
     "atrophy_cool_down": 0.5,
     "wreckage_health_frac": 0.0,
@@ -75,8 +75,7 @@
         ]
     ],
     "unit_types": [
-        "UNITTYPE_Custom8",
-        "UNITTYPE_Custom9",
+        "UNITTYPE_Custom10",
         "UNITTYPE_CmdBuild",
         "UNITTYPE_FabAdvBuild",
         "UNITTYPE_Structure",

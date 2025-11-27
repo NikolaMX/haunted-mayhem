@@ -36,6 +36,7 @@
         "size": 1
     },
     "guard_layer": "WL_LandHorizontal",
+    "guard_radius": 50,
     "navigation": {
         "type": "amphibious",
         "acceleration": 400,

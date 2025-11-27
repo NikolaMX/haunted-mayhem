@@ -4,7 +4,7 @@
     "display_name": "Snek",
     "description": "!LOC:Light Cavalry. Fast. Double damage against Cavalry and Spiders",
     "armor_type": "AT_Custom4",
-    "max_health": 300,
+    "max_health": 150,
     "build_metal_cost": 200,
     "wreckage_health_frac": 1,
     "attachable": {
@@ -41,14 +41,14 @@
     "transportable": {
         "size": 1
     },
-    "guard_radius": 0,
+    "guard_radius": 50,
     "guard_layer": "WL_AnySurface",
     "navigation": {
         "aggressive_distance": 30.0,
         "type": "land-small",
         "acceleration": 36,
         "brake": 9,
-        "move_speed": 18,
+        "move_speed": 16,
         "turn_speed": 90
     },
     "physics": {

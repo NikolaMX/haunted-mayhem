@@ -3,7 +3,9 @@
   "damage": 80,
   "armor_damage_map": {
     
-    "AT_Custom3": 1
+    "AT_Custom3": 1,
+    "AT_Custom4": 1,
+    "AT_Custom5": 1
     
   },
   "fx_trail": {
