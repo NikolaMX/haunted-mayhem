@@ -1,0 +1,133 @@
+{
+  "display_name": "!LOC:Crab",
+  "description": "!LOC:Beast. Heavily armoured. Fast.",
+  "base_spec": "/pa/units/land/base_bot/base_bot.json",
+  "armor_type": "AT_Custom6",
+  "wreckage_health_frac": 0.0,
+  "spawn_layers": "WL_LandHorizontal",
+  "unit_types": [
+    "UNITTYPE_Custom10",
+    "UNITTYPE_Tank",
+    "UNITTYPE_Tactical",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Land",
+    
+    "UNITTYPE_Basic",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_CannonBuildable",
+    "UNITTYPE_Offense"
+  ],
+  "attachable": {
+    "offsets": {
+      "head": [
+        0,
+        0,
+        4
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "build_metal_cost": 1000,
+  "max_health": 1000,
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Attack",
+    "ORDER_Assist",
+    "ORDER_FireSecondaryWeapon",
+    "ORDER_Use"
+  ],
+  "events": {
+  
+    "fired": {
+      "audio_cue": "/SE/Weapons/bot/grenadier_fire",
+      "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx right_muzzle01"
+    }
+  },
+  "guard_layer": "WL_AnySurface",
+ "guard_radius": 50,
+  "mesh_bounds": [
+    6,
+    8,
+    5
+  ],
+  "model": {
+    "animations": {
+      "firing": "/pa/units/medieval/cavalry/crab/crab_anim_stab.papa",
+      "idle": "/pa/units/medieval/cavalry/crab/crab_anim_idle.papa",
+      "walk": "/pa/units/medieval/cavalry/crab/crab_anim_walk.papa"
+    },
+    "animtree": "/pa/units/medieval/cavalry/scorpion/scorpion_anim_tree.json",
+    "filename": "/pa/units/medieval/cavalry/crab/crab.papa",
+     "walk_speed": 4
+  },
+  "navigation": {
+    "acceleration": 80,
+    "brake": -1,
+    "group_preference": "back",
+    "move_speed": 15,
+    "turn_speed": 240,
+    "type": "amphibious"
+  },
+  "physics": {
+    "radius": 2
+  },
+  "selection_icon": {
+    "diameter": 15
+  },
+  "tools": [
+    
+    {
+      "spec_id": "/pa/units/medieval/cavalry/crab/crab_tool_weapon.json",
+      "aim_bone": "bone_root",
+      "muzzle_bone": "bone_root",
+      "primary_weapon": "true",
+      "show_range": true
+    }
+  ],
+  "transportable": {
+    "size": 1
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 100
+        },
+        {
+          "layer": "underwater",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 100
+        }
+      ]
+    }
+  },
+  "attack_range_frac": 0.9,
+   "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/bot/spark_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/bot/spark"
+    }
+  },
+  "TEMP_texelinfo": 6.38702,
+  "death": {
+    "decals": [
+      "/pa/effects/decal/splat_yellow_decal.json"
+    ]
+  }
+}

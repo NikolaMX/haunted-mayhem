@@ -1,7 +1,11 @@
 {
-     "ammo_id": "/pa/units/medieval/infantry/acolyte/acolyte_ammo.json",
- 
-    
+    "ammo_id": [
+      {
+        "layer": "WL_AnyLand",
+        "id": "/pa/units/medieval/cavalry/crab/crab_ammo.json"
+      }
+    ],
+    "auto_attack": true,
     "base_spec": "/pa/tools/base_bot_weapon/base_bot_weapon.json",
     "max_range": 15,
     "idle_aim_delay": 1.0,
@@ -22,22 +26,12 @@
       "Wall",
       "Air"
     ],
-    "yaw_range": 45,
+    "yaw_range": 90,
     "yaw_rate": 360,
 
 "ammo_per_shot": 1.25,
 "ammo_capacity": 1.99,
 "ammo_source": "time",
 "carpet_fire": true,
-"carpet_wait_for_full_ammo": false,
-
-
-"self_destruct": true,
-"firing_arc_pitch": 360,
-  "firing_arc_yaw": 360,
-  "manual_fire": true,
-  "auto_attack": false,
-  "auto_task_type": "none"
+"carpet_wait_for_full_ammo": false
   }
-
-  
