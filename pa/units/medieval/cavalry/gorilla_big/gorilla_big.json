@@ -33,7 +33,7 @@
     },
     "guard_layer": "WL_AnySurface",
     "navigation": {
-        "type": "land-small",
+        "type": "amphibious-large",
         "acceleration": 120,
         "brake": -1,
         "move_speed": 16,
@@ -46,7 +46,7 @@
       "type_data": [
         {
           "move_type": "land-small",
-          "stamp_type": "structure"
+          "stamp_type": "simple"
         },
         {
           "move_type": "amphibious",

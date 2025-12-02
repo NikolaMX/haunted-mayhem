@@ -1,0 +1,135 @@
+{
+    "display_name": "Roach",
+    "si_name": "roach",
+    "description": "!LOC:Light Cavalry. Very Fast. Flexible but weak.",
+    "TEMP_texelinfo": 6.12932,
+    "wreckage_health_frac": 1.0,
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ],
+            "head": [
+                0,
+                1.5,
+                6.1499996
+            ]
+        }
+    },
+    "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/bot/grenadier_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/bot/grenadier"
+    }
+  },
+    "base_spec": "/pa/units/land/base_bot/base_bot.json",
+    "build_metal_cost": 200,
+    "events": {
+        "fired": {
+            "audio_cue": "/SE/Weapons/veh/attack_vehicle_fire",
+            "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle_1 /pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle_7",
+            "effect_scale": 1.5
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Veh",
+            "effect_scale": 1.5
+        },
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/veh",
+            "effect_scale": 1.5
+        }
+    },
+    "guard_layer": "WL_AnySurface",
+    "guard_radius": 50,
+    "max_health": 200,
+    "mesh_bounds": [
+        5.7,
+        7.5,
+        5.25
+    ],
+    "model": {
+        "filename": "/pa/units/medieval/cavalry/roach/roach.papa",
+        "animations": {
+            "walk": "/pa/units/medieval/cavalry/roach/roach_anim_run.papa",
+            "idle": "/pa/units/medieval/cavalry/roach/roach_anim_idle.papa"
+        },
+        "animtree": "/pa/units/medieval/cavalry/roach/anim_tree.json",
+        "walk_speed": 8
+    },
+    "navigation": {
+        "acceleration": 150,
+        "brake": 150,
+        "turn_speed": 90,
+        "move_speed": 18,
+        "type": "amphibious"
+    },
+    "physics": {
+        "radius": 5.25
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "channel": "sight",
+                    "layer": "surface_and_air",
+                    "radius": 100,
+                    "shape": "capsule"
+                },
+                {
+                    "channel": "sight",
+                    "layer": "underwater",
+                    "radius": 100,
+                    "shape": "capsule"
+                }
+            ]
+        }
+    },
+    "selection_icon": {
+        "diameter": 10.0
+    },
+    "tools": [
+        {
+            "muzzle_bone": [
+                "bone_pitch"
+            ],
+            "projectiles_per_fire": 1,
+            "spec_id": "/pa/units/medieval/cavalry/roach/roach_tool_weapon.json",
+            "aim_bone": "bone_pitch"
+        }
+    ],
+    "transportable": {
+        "size": 1
+    },
+    "unit_types": [
+        "UNITTYPE_Custom10",
+        "UNITTYPE_Tank",
+        "UNITTYPE_Tactical",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Land",
+       
+        "UNITTYPE_Basic",
+        "UNITTYPE_FactoryBuild",
+        "UNITTYPE_Offense"
+    ],
+    "command_caps": [
+        "ORDER_Move",
+        "ORDER_Patrol",
+        "ORDER_Attack",
+        "ORDER_Assist",
+        "ORDER_Use"
+    ],
+  "death": {
+    "decals": [
+      "/pa/effects/decal/splat_yellow_decal.json"
+    ]
+  }
+}

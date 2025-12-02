@@ -2,8 +2,8 @@
   "display_name": "!LOC:Crab",
   "description": "!LOC:Beast. Heavily armoured. Fast.",
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
-  "armor_type": "AT_Custom6",
-  "wreckage_health_frac": 0.0,
+  "armor_type": "AT_Custom5",
+  "wreckage_health_frac": 1.0,
   "spawn_layers": "WL_LandHorizontal",
   "unit_types": [
     "UNITTYPE_Custom10",
@@ -38,7 +38,6 @@
     "ORDER_Patrol",
     "ORDER_Attack",
     "ORDER_Assist",
-    "ORDER_FireSecondaryWeapon",
     "ORDER_Use"
   ],
   "events": {
@@ -71,7 +70,47 @@
     "group_preference": "back",
     "move_speed": 15,
     "turn_speed": 240,
-    "type": "amphibious"
+    "type": "amphibious",
+
+
+    "park_stamp": {
+      "shape": "sphere",
+      "cost": 5,
+      "type_data": [
+        {
+          "move_type": "land-small",
+          "stamp_type": "simple"
+        },
+        {
+          "move_type": "amphibious",
+          "stamp_type": "simple"
+        },
+        {
+          "move_type": "amphibious-large",
+          "stamp_type": "simple"
+        },
+        {
+          "move_type": "hover",
+          "stamp_type": "structure"
+        },
+        {
+          "move_type": "water-hover",
+          "stamp_type": "structure"
+        },
+        {
+          "move_type": "hover-large",
+          "stamp_type": "simple"
+        },
+        {
+          "move_type": "deepwater",
+          "stamp_type": "structure"
+        },
+        {
+          "move_type": "underwater",
+          "stamp_type": "structure"
+        }
+      ]
+    }
   },
   "physics": {
     "radius": 2

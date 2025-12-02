@@ -1,13 +1,9 @@
 {
   "base_spec": "/pa/ammo/base_bullet/base_bullet.json",
   "damage": 50,
+  "armor_type": "AT_Custom4",
   "armor_damage_map": {
-    "AT_Custom1": 1,
-    "AT_Custom2": 1,
     
-    "AT_Custom4": 1,
-    "AT_Custom5": 1,
-    "AT_Custom6": 1
   },
   "fx_trail": {
     "filename": "/pa/units/medieval/cavalry/snake/belcher_projectile.pfx"

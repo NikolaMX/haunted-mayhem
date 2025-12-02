@@ -84,7 +84,7 @@
     {
       "spec_id": "/pa/units/medieval/cavalry/scorpion/scorpion_tool_weapon.json",
       "aim_bone": "bone_turret",
-      "muzzle_bone": "stinger",
+      "muzzle_bone": "bone_turret",
       "primary_weapon": "true",
       "show_range": true
     },
