@@ -1,8 +1,8 @@
 {
   "display_name": "!LOC:Web Mother",
   "description": "!LOC:Spider. Places web traps that immobilize enemy units for an extended period. Other spiders can traverse the web.",
-  "base_spec": "/pa/units/land/base_bot/base_bot.json",
-  "armor_type": "AT_Bot",
+  "base_spec": "/pa/units/medieval/cavalry/big_spider/big_spider.json",
+  "armor_type": "AT_Custom8",
   "wreckage_health_frac": 0.0,
   "spawn_layers": "WL_LandHorizontal",
   "unit_types": [
@@ -81,7 +81,23 @@
     {
       "spec_id": "/pa/units/medieval/cavalry/big_spider/big_spider_tool_weapon_web.json",
       "aim_bone": "bone_root",
-      "muzzle_bone": "bone_reactor"
+      "muzzle_bone": "bone_reactor",
+      "primary_weapon": true
+    },
+    {
+      "spec_id": "/pa/units/medieval/cavalry/big_spider/big_spider_tool_weapon.json",
+      "aim_bone": "bone_root",
+      "projectiles_per_fire": 3,
+      "muzzle_bone": [
+        "drop1",
+        "drop2",
+        "drop3",
+        "drop4",
+        "drop5",
+        "drop6",
+        "drop7"
+      ],
+      "primary_weapon": false
     }
   ],
   "transportable": {

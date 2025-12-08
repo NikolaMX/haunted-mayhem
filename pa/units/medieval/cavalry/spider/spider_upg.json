@@ -1,8 +1,8 @@
 {
-    "base_spec": "/pa/units/land/base_bot/base_bot.json",
+    "base_spec": "/pa/units/medieval/cavalry/spider/spider.json",
     "display_name": "Spider",
-    "description": "!LOC:Spider. Can detect traps and invisible enemies. Ranged.",
-    "armor_type": "AT_Bot",
+    "description": "!LOC:Spider. Can detect traps and invisible enemies. Ranged. Regains helath on kill.",
+    "armor_type": "AT_Custom8",
     "max_health": 80,
     "build_metal_cost": 150,
     "wreckage_health_frac": 0.0,
@@ -42,7 +42,7 @@
         "acceleration": 400,
         "brake": -1,
         "move_speed": 10,
-        "turn_speed": 240
+        "turn_speed": 720
     },
     "physics": {
         "radius": 2.25,

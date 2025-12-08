@@ -231,13 +231,17 @@ if (model.BuildSet && model.BuildSet.tabsTemplate) {
 
 //Vesperin    
         ["v_research", "!LOC:vesperin research"],
-      
+        ["v_upgrades", "!LOC:vesperin upgrades"],
+
+
         ["a_factory", "!LOC:vesperin archers"],
 
         ["i_f_factory", "!LOC:vesperin firemage"],
         ["c_b_factory", "!LOC:vesperin pumpkins"],
         ["c_s_factory", "!LOC:vesperin spiders"],
         ["v_s_factory", "!LOC:vesperin snakes"],
+
+
 
 
 

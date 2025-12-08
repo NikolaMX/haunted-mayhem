@@ -36,8 +36,11 @@ var paeiouIcons = [
 
     "larva",
     "spider",
+    "spider_upg",
     "big_spider",
+    "big_spider_upg",
     "jumping_spider",
+    "jumping_spider_upg",
     "scorpion",
     "crab",
     "roach",

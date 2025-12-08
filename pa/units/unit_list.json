@@ -75,8 +75,11 @@
 
     "/pa/units/medieval/cavalry/larva/larva.json",
     "/pa/units/medieval/cavalry/spider/spider.json",
+    "/pa/units/medieval/cavalry/spider/spider_upg.json",
     "/pa/units/medieval/cavalry/big_spider/big_spider.json",
+    "/pa/units/medieval/cavalry/big_spider/big_spider_upg.json",
     "/pa/units/medieval/cavalry/jumping_spider/jumping_spider.json",
+    "/pa/units/medieval/cavalry/jumping_spider/jumping_spider_upg.json",
     "/pa/units/medieval/cavalry/scorpion/scorpion.json",
     "/pa/units/medieval/cavalry/crab/crab.json",
     "/pa/units/medieval/cavalry/roach/roach.json",
@@ -192,7 +195,9 @@
     "/pa/units/medieval/research/vesperin/ranged/ranged_t2.json",
     "/pa/units/medieval/research/vesperin/ranged/ranged_t3.json",
 
-
+    "/pa/units/medieval/research/vesperin/bugs/bugs_t1.json",
+    "/pa/units/medieval/research/vesperin/bugs/bugs_t2.json",
+    "/pa/units/medieval/research/vesperin/bugs/bugs_t3.json",
 
     "/pa/units/medieval/research/vesperin/spiders/spiders_t1.json",
     "/pa/units/medieval/research/vesperin/spiders/spiders_t2.json",
@@ -202,10 +207,14 @@
     "/pa/units/medieval/research/cabal/cavalry/gorilla_t2.json",
     "/pa/units/medieval/research/cabal/cavalry/burrow_bear.json",
 
-
     "/pa/units/medieval/research/vesperin/snakes/snakes_t1.json",
     "/pa/units/medieval/research/vesperin/snakes/snakes_t2.json",
     "/pa/units/medieval/research/vesperin/snakes/snakes_t3.json",
+
+
+"/pa/units/medieval/upgrades/vesperin/spiders/consume.json",
+"/pa/units/medieval/upgrades/vesperin/spiders/nesting.json",
+
 
 
 
@@ -225,10 +234,12 @@
     "/pa/units/medieval/research/cabal/ghosts/ghosts_t2.json",
     "/pa/units/medieval/research/cabal/ghosts/ghosts_t1.json",
 
+
 "/pa/units/medieval/upgrades/cabal/infantry/sword_dox.json",
 "/pa/units/medieval/upgrades/cabal/infantry/assassin.json",
 "/pa/units/medieval/upgrades/cabal/infantry/axe.json",
 "/pa/units/medieval/upgrades/cabal/infantry/longbow.json",
+
 
 
 

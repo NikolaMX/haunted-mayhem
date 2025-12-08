@@ -2,10 +2,10 @@
 
   {
     "base_spec":"/pa/units/land/base_vehicle/base_vehicle.json",
-    "display_name":"!LOC:Web Trap T2 unlock",
-    "description":"!LOC:Web traps can now also be built by Larva. Activate like mines, immobilizing all units in a large radius. Trap lasts for 30 seconds.",
+    "display_name":"!LOC:Spiders Nesting Upgrade",
+    "description":"!LOC:Web Mothers can now lay eggs that turn into spiders",
     "si_name": "empty",
-    "build_metal_cost": 700,
+    "build_metal_cost": 300,
     "add_to_spatial_db": false,
     "model": {
       "filename": "/pa/units/medieval/misc/stun/empty_model.papa"

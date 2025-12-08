@@ -203,8 +203,14 @@ var newBuild = {
         "/pa/units/medieval/cavalry/spider/spider.json": ["c_s_factory", 0, { row: 2, column: 1 }],
         "/pa/units/medieval/cavalry/big_spider/big_spider.json": ["c_s_factory", 0, { row: 0, column: 1 }],
         "/pa/units/medieval/cavalry/jumping_spider/jumping_spider.json": ["c_s_factory", 0, { row: 1, column: 1 }],
-        "/pa/units/medieval/cavalry/scorpion/scorpion.json": ["c_s_factory", 0, { row: 0, column: 0 }],
+        
     
+        //Bugs
+        "/pa/units/medieval/cavalry/roach/roach.json": ["c_s_factory", 0, { row: 2, column: 2 }],
+        "/pa/units/medieval/cavalry/crab/crab.json": ["c_s_factory", 0, { row: 1, column: 2 }],
+        "/pa/units/medieval/cavalry/scorpion/scorpion.json": ["c_s_factory", 0, { row: 0, column: 2 }],
+
+
         //Snakes
         "/pa/units/medieval/cavalry/mini_snake/mini_snake.json": ["v_s_factory", 0, { row: 2, column: 0 }],
         "/pa/units/medieval/cavalry/snake/snake.json": ["v_s_factory", 0, { row: 1, column: 0 }],
@@ -243,24 +249,32 @@ var newBuild = {
 //Vesperin Research
 
     //Ranged
-    "/pa/units/medieval/research/vesperin/ranged/ranged_t1.json": ["v_research", 0, { row: 2, column: 2 }],
-    "/pa/units/medieval/research/vesperin/ranged/ranged_t2.json": ["v_research", 0, { row: 1, column: 2 }],
-    "/pa/units/medieval/research/vesperin/ranged/ranged_t3.json": ["v_research", 0, { row: 0, column: 2 }],
+    "/pa/units/medieval/research/vesperin/ranged/ranged_t1.json": ["v_research", 0, { row: 2, column: 1 }],
+    "/pa/units/medieval/research/vesperin/ranged/ranged_t2.json": ["v_research", 0, { row: 1, column: 1 }],
+    "/pa/units/medieval/research/vesperin/ranged/ranged_t3.json": ["v_research", 0, { row: 0, column: 1 }],
+
 
      //Spiders
-    "/pa/units/medieval/research/vesperin/spiders/spiders_t3.json": ["v_research", 0, { row: 0, column: 4 }],
-    "/pa/units/medieval/research/vesperin/spiders/spiders_t2.json": ["v_research", 0, { row: 1, column: 4 }],
-    "/pa/units/medieval/research/vesperin/spiders/spiders_t1.json": ["v_research", 0, { row: 2, column: 4 }],
+    "/pa/units/medieval/research/vesperin/spiders/spiders_t3.json": ["v_research", 0, { row: 0, column: 2 }],
+    "/pa/units/medieval/research/vesperin/spiders/spiders_t2.json": ["v_research", 0, { row: 1, column: 2 }],
+    "/pa/units/medieval/research/vesperin/spiders/spiders_t1.json": ["v_research", 0, { row: 2, column: 2 }],
     
+
+     //Bugs
+    "/pa/units/medieval/research/vesperin/bugs/bugs_t3.json": ["v_research", 0, { row: 0, column: 3 }],
+    "/pa/units/medieval/research/vesperin/bugs/bugs_t2.json": ["v_research", 0, { row: 1, column: 3 }],
+    "/pa/units/medieval/research/vesperin/bugs/bugs_t1.json": ["v_research", 0, { row: 2, column: 3 }],
+
+
     //Snakes
-    "/pa/units/medieval/research/vesperin/snakes/snakes_t1.json": ["v_research", 0, { row: 2, column: 5 }],
-    "/pa/units/medieval/research/vesperin/snakes/snakes_t2.json": ["v_research", 0, { row: 1, column: 5 }],
-    "/pa/units/medieval/research/vesperin/snakes/snakes_t3.json": ["v_research", 0, { row: 0, column: 5 }],
+    "/pa/units/medieval/research/vesperin/snakes/snakes_t1.json": ["v_research", 0, { row: 2, column: 4 }],
+    "/pa/units/medieval/research/vesperin/snakes/snakes_t2.json": ["v_research", 0, { row: 1, column: 4 }],
+    "/pa/units/medieval/research/vesperin/snakes/snakes_t3.json": ["v_research", 0, { row: 0, column: 4 }],
 
     //Pumpkin
-    "/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t3.json": ["v_research", 0, { row: 0, column: 3 }],
-    "/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t2.json": ["v_research", 0, { row: 1, column: 3 }],
-    "/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t1.json": ["v_research", 0, { row: 2, column: 3 }],
+    "/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t3.json": ["v_research", 0, { row: 0, column: 5 }],
+    "/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t2.json": ["v_research", 0, { row: 1, column: 5 }],
+    "/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t1.json": ["v_research", 0, { row: 2, column: 5 }],
 
 //Upgrades
 
@@ -273,6 +287,13 @@ var newBuild = {
 
 
     //Imperia
+
+
+
+    //Vesperin
+"/pa/units/medieval/upgrades/vesperin/spiders/nesting.json": ["v_upgrades", 0, { row: 1, column: 0 }],
+"/pa/units/medieval/upgrades/vesperin/spiders/consume.json": ["v_upgrades", 0, { row: 0, column: 0 }],
+
 //Research
 
 

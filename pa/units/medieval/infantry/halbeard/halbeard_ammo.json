@@ -4,7 +4,8 @@
   "armor_damage_map": {
     
     "AT_Custom1": 1,
-    "AT_Custom2": 1
+    "AT_Custom2": 1,
+    "AT_Custom3": 1
     
   },
   "initial_velocity": 30.0,
@@ -14,7 +15,7 @@
     "filename": ""
   },
   "splash_damage": 120,
-  "splash_radius": 1,
+  "splash_radius": 0.5,
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/shell_bullet",

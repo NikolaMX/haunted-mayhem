@@ -2,8 +2,8 @@
 
   {
     "base_spec":"/pa/units/land/base_vehicle/base_vehicle.json",
-    "display_name":"!LOC:Web Trap T2 unlock",
-    "description":"!LOC:Web traps can now also be built by Larva. Activate like mines, immobilizing all units in a large radius. Trap lasts for 30 seconds.",
+    "display_name":"!LOC:Crab T2 unlock",
+    "description":"!LOC:Heavy Cavalry Crab. Mobile and very durable. Can traverse spiderwebs. Great at tanking and initiating engaugements.",
     "si_name": "empty",
     "build_metal_cost": 700,
     "add_to_spatial_db": false,

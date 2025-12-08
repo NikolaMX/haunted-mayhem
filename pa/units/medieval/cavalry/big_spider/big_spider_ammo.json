@@ -15,13 +15,13 @@
     "filename": "/pa/units/medieval/misc/stun/none.pfx"
   },
   "initial_velocity": 17,
-  "lifetime": 1,
+  "lifetime": 10,
   "max_velocity": 20,
   "min_velocity": 17,
   "model": {
     "filename": ""
   },
-  "spawn_unit_on_death": "/pa/units/medieval/cavalry/spider/spider.json",
+  "spawn_unit_on_death": "/pa/units/medieval/cavalry/jumping_spider/jumping_spider_upg.json",
   "spawn_unit_on_death_with_velocity": false,
   "splash_damage": 0,
   "splash_radius": 0

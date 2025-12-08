@@ -1,33 +1,38 @@
 {
-  "ammo_capacity": 420,
-  "ammo_demand": 35,
-  "ammo_id": [
-    {
-      "id": "/pa/units/medieval/cavalry/big_spider/big_spider_ammo.json",
-      "layer": "WL_AnyLand"
-    }
-  ],
-  "ammo_per_shot": 820,
-  "ammo_source": "energy",
-  "auto_attack": true,
-  "base_spec": "/pa/tools/base_bomb_bay/base_bomb_bay.json",
-  "events": {
-    "died": {
-      "audio_cue": "/SE/Impacts/shell_artillery",
-      "effect_spec": "/pa/effects/specs/default_proj_area_explosion.pfx"
-    }
-  },
-  "fire_arc_pitch": 15,
-  "firing_standard_deviation": 360,
-  "max_range": 100,
-  "pitch_range": 180,
-  "pitch_rate": 3600,
-  "rate_of_fire": 1,
-  "spread_fire": true,
-  "start_fully_charged": true,
-  "target_layers": [
-    "WL_LandHorizontal"
-  ],
-  "yaw_range": 180,
-  "yaw_rate": 3600
+    "base_spec": "/pa/tools/base_artillery_turret/base_artillery_turret.json",
+    "ammo_id": "/pa/units/medieval/cavalry/big_spider/big_spider_ammo.json",
+    "force_fire_from_muzzle": true,
+    "rate_of_fire": 1,
+    "max_firing_velocity": 150,
+    "min_firing_velocity": 100,
+
+"start_fully_charged": false,
+"ammo_capacity": 1350,
+  "ammo_demand": 45,
+
+  "ammo_per_shot": 1350,
+  "ammo_source": "metal",
+   
+
+    "max_range": 100,
+    "yaw_rate": 360,
+    "pitch_rate": 360,
+    "yaw_range": 180,
+    "pitch_range": 89.9,
+    "firing_arc_yaw": 360,
+    "firing_arc_pitch": 360,
+    "auto_attack": true,
+    "firing_standard_deviation": 0,
+
+    "physics": {
+        "radius": 1,
+        "gravity_scalar": 1,
+        "add_to_spatial_db": false
+    },
+    "target_layers": [
+        "WL_LandHorizontal",
+        "WL_Seafloor",
+        "WL_WaterSurface",
+        "WL_Underwater"
+    ]
 }

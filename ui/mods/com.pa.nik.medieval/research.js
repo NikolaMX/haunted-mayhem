@@ -40,17 +40,28 @@ model.unitsToLock = [
                     "/pa/units/medieval/structures/spectral_shrine/spectral_shrine.json",
                     "/pa/units/medieval/structures/serpent_shrine/serpent_shrine.json",
 
-    //Cabal Spiders
+    //Vesperin Spiders
                     "/pa/units/medieval/cavalry/big_spider/big_spider.json",
                     "/pa/units/medieval/cavalry/jumping_spider/jumping_spider.json",
+                    "/pa/units/medieval/cavalry/big_spider/big_spider_upg.json",
+                    "/pa/units/medieval/cavalry/jumping_spider/jumping_spider_upg.json",
+                    "/pa/units/medieval/cavalry/spider/spider_upg.json",
+                    
+    //Vesperin Bugs 
+                    "/pa/units/medieval/cavalry/roach/roach.json",
+                    "/pa/units/medieval/cavalry/crab/crab.json",                   
                     "/pa/units/medieval/cavalry/scorpion/scorpion.json",
-    //Cabal SpiderWeb
+    //Vesperin SpiderWeb
                     "/pa/units/medieval/structures/web_mine/web_mine.json",
 
 
     //Spider Research
                     "/pa/units/medieval/research/vesperin/spiders/spiders_t2.json",
                     "/pa/units/medieval/research/vesperin/spiders/spiders_t3.json",
+    //Bugs Research
+                    "/pa/units/medieval/research/vesperin/bugs/bugs_t2.json",
+                    "/pa/units/medieval/research/vesperin/bugs/bugs_t3.json",
+
     //Cabal Cav Research
                     "/pa/units/medieval/research/cabal/cavalry/gorilla_t2.json",
                     "/pa/units/medieval/research/cabal/cavalry/burrow_bear.json",
@@ -261,7 +272,8 @@ model.unlockPairs = [
     false],
 
 
-     //Cabal Spiders T1
+//Cabal SPIDERS
+    //Cabal Spiders T1
     ["/pa/units/medieval/research/vesperin/spiders/spiders_t1.json",
     ["/pa/units/medieval/cavalry/jumping_spider/jumping_spider.json",
     "/pa/units/medieval/research/vesperin/spiders/spiders_t2.json"
@@ -270,7 +282,7 @@ model.unlockPairs = [
     false],
      //Cabal Spiders T2
     ["/pa/units/medieval/research/vesperin/spiders/spiders_t2.json",
-    [   "/pa/units/medieval/cavalry/big_spider/big_spider.json",     
+    [        
         "/pa/units/medieval/structures/web_mine/web_mine.json",
         "/pa/units/medieval/research/vesperin/spiders/spiders_t3.json"    
                 ],
@@ -278,11 +290,33 @@ model.unlockPairs = [
     false],
      //Cabal Spiders T3
     ["/pa/units/medieval/research/vesperin/spiders/spiders_t3.json",
-    [   "/pa/units/medieval/cavalry/scorpion/scorpion.json"   
+    [   "/pa/units/medieval/cavalry/big_spider/big_spider.json",   
                 ],
     ["/pa/units/medieval/research/vesperin/spiders/spiders_t3.json"],
     false],
 
+
+//Cabal Bugs
+    //Cabal Bugs T1
+    ["/pa/units/medieval/research/vesperin/bugs/bugs_t1.json",
+    ["/pa/units/medieval/cavalry/roach/roach.json",
+    "/pa/units/medieval/research/vesperin/bugs/bugs_t2.json"
+                ],
+    ["/pa/units/medieval/research/vesperin/bugs/bugs_t1.json"],
+    false],
+     //Cabal Bugs T2
+    ["/pa/units/medieval/research/vesperin/bugs/bugs_t2.json",
+    [   "/pa/units/medieval/cavalry/crab/crab.json",     
+        "/pa/units/medieval/research/vesperin/bugs/bugs_t3.json"    
+                ],
+    ["/pa/units/medieval/research/vesperin/bugs/bugs_t2.json"],
+    false],
+     //Cabal Spiders T3
+    ["/pa/units/medieval/research/vesperin/bugs/bugs_t3.json",
+    [   "/pa/units/medieval/cavalry/scorpion/scorpion.json"   
+                ],
+    ["/pa/units/medieval/research/vesperin/bugs/bugs_t3.json"],
+    false],
 
 //Cabal MAGES
     //Acolyte + Necro
@@ -582,6 +616,39 @@ model.unlockPairs = [
                 ],
     ["/pa/units/medieval/research/vesperin/ranged/ranged_t3.json"],
     false],  
+
+
+//=============UPGRADES==============
+
+//Vesperin
+
+//Spiders
+
+
+
+
+     //Consume for Spider and Jumping Spider
+    ["/pa/units/medieval/upgrades/vesperin/spiders/consume.json",
+    ["/pa/units/medieval/cavalry/spider/spider_upg.json",
+        "/pa/units/medieval/cavalry/jumping_spider/jumping_spider_upg.json"
+                ],
+    ["/pa/units/medieval/cavalry/spider/spider.json",
+        "/pa/units/medieval/cavalry/jumping_spider/jumping_spider.json",
+        "/pa/units/medieval/upgrades/vesperin/spiders/consume.json"
+    ],
+    true],
+
+    //Web Mother Egglayer
+     ["/pa/units/medieval/upgrades/vesperin/spiders/nesting.json",
+    ["/pa/units/medieval/cavalry/big_spider/big_spider_upg.json"  
+                ],
+    ["/pa/units/medieval/cavalry/big_spider/big_spider.json", "/pa/units/medieval/upgrades/vesperin/spiders/nesting.json"],
+    true],
+
+
+
+        
+
 
 ]
 
