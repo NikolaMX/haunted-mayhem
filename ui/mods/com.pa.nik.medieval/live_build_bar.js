@@ -225,7 +225,7 @@ if (model.BuildSet && model.BuildSet.tabsTemplate) {
         ["c_factory", "!LOC:imperia cavalry"],
 
         ["i_research", "!LOC:imperia research"],
-        ["i_upgrades", "!LOC:cabal upgrades"],
+        ["i_upgrades", "!LOC:imperia upgrades"],
 
 
 

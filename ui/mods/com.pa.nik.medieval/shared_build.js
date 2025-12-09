@@ -70,10 +70,6 @@ var newBuild = {
     "/pa/units/medieval/cavalry/recurve_cav/recurve_cav.json": ["c_factory", 0, { row: 2, column: 2 }],
     
     //Mercanaries
-    
-    
-    "/pa/units/medieval/infantry/champion/champion.json": ["t_m_factory", 0, { row: 1, column: 0 }],
-
     "/pa/units/medieval/infantry/zweihander/zweihander.json": ["t_m_factory", 0, { row: 2, column: 0 }],
     "/pa/units/medieval/infantry/javelin/javelin.json": ["t_m_factory", 0, { row: 2, column: 1 }],
     "/pa/units/medieval/infantry/guardian/guardian.json": ["t_m_factory", 0, { row: 2, column: 2 }],
@@ -287,12 +283,12 @@ var newBuild = {
 
 
     //Imperia
-
-
+"/pa/units/medieval/upgrades/imperia/infantry/dual_sword.json": ["i_upgrades", 0, { row: 2, column: 0 }],
+"/pa/units/medieval/upgrades/imperia/infantry/champion.json": ["i_upgrades", 0, { row: 2, column: 1 }],
 
     //Vesperin
-"/pa/units/medieval/upgrades/vesperin/spiders/nesting.json": ["v_upgrades", 0, { row: 1, column: 0 }],
-"/pa/units/medieval/upgrades/vesperin/spiders/consume.json": ["v_upgrades", 0, { row: 0, column: 0 }],
+"/pa/units/medieval/upgrades/vesperin/spiders/nesting.json": ["v_upgrades", 0, { row: 2, column: 0 }],
+"/pa/units/medieval/upgrades/vesperin/spiders/consume.json": ["v_upgrades", 0, { row: 1, column: 0 }],
 
 //Research
 

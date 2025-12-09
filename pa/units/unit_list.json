@@ -187,11 +187,10 @@
 
 
     "/pa/units/medieval/research/cabal/infantry/axe.json",
-     "/pa/units/medieval/research/cabal/infantry/assassin.json",
-        "/pa/units/medieval/research/cabal/infantry/halbeard.json",
+    "/pa/units/medieval/research/cabal/infantry/assassin.json",
+    "/pa/units/medieval/research/cabal/infantry/halbeard.json",
 
-
-       "/pa/units/medieval/research/vesperin/ranged/ranged_t1.json",
+    "/pa/units/medieval/research/vesperin/ranged/ranged_t1.json",
     "/pa/units/medieval/research/vesperin/ranged/ranged_t2.json",
     "/pa/units/medieval/research/vesperin/ranged/ranged_t3.json",
 
@@ -267,10 +266,10 @@
                     "/pa/units/medieval/research/imperia/merc/merc_t1.json",
                     "/pa/units/medieval/research/imperia/merc/merc_t2.json",
                     "/pa/units/medieval/research/imperia/merc/merc_t3.json",
-                    "/pa/units/medieval/research/imperia/merc/merc_t4.json"
+                    "/pa/units/medieval/research/imperia/merc/merc_t4.json",
 
-
-
+"/pa/units/medieval/upgrades/imperia/infantry/dual_sword.json",
+"/pa/units/medieval/upgrades/imperia/infantry/champion.json"
 
   ]
 }

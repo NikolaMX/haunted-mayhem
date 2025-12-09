@@ -105,12 +105,12 @@
   },
   "TEMP_texelinfo": 21.7597,
   "placement_size": [
-    30,
-    30
+    40,
+    40
   ],
   "mesh_bounds": [
-    30,
-    30,
+    40,
+    40,
     20
   ]
 }

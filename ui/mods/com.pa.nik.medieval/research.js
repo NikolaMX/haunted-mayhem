@@ -385,8 +385,6 @@ model.unlockPairs = [
                 ],
     ["/pa/units/medieval/infantry/assassin/assassin.json", "/pa/units/medieval/upgrades/cabal/infantry/assassin.json"],
     true],
-    
-
 
     //Assassin speed upgrade
      ["/pa/units/medieval/upgrades/cabal/infantry/assassin.json",
@@ -395,21 +393,20 @@ model.unlockPairs = [
     ["/pa/units/medieval/infantry/assassin/assassin.json", "/pa/units/medieval/upgrades/cabal/infantry/assassin.json"],
     true],
     
-//Axe respawn upgrade
+    //Axe respawn upgrade
      ["/pa/units/medieval/upgrades/cabal/infantry/axe.json",
     ["/pa/units/medieval/infantry/axe_dox/axe_dox_upg.json"
                 ],
     ["/pa/units/medieval/infantry/axe_dox/axe_dox.json", "/pa/units/medieval/upgrades/cabal/infantry/axe.json"],
     true],
     
-
-
-    //Longbow fire arrows
+//Longbow fire arrows
      ["/pa/units/medieval/upgrades/cabal/infantry/longbow.json",
     ["/pa/units/medieval/infantry/longbow/longbow_c_upg.json"  
                 ],
     ["/pa/units/medieval/infantry/longbow/longbow_c.json", "/pa/units/medieval/upgrades/cabal/infantry/longbow.json"],
-    true],           
+    true],
+
 
 
 //--------------------------------IMPERIA--------------------------------
@@ -539,6 +536,26 @@ model.unlockPairs = [
                 ],
     ["/pa/units/medieval/research/imperia/lightning/lightning_t3.json"],
     false],  
+
+
+//=============UPGRADES==============
+
+//Imperia
+
+//Infantry
+     //Swordsman -> Dual Sword Upgrade
+    ["/pa/units/medieval/upgrades/imperia/infantry/dual_sword.json",
+    ["/pa/units/medieval/infantry/dual_sword/dual_sword.json"   
+                ],
+    ["/pa/units/medieval/infantry/sword_light/sword_light.json", "/pa/units/medieval/upgrades/imperia/infantry/dual_sword.json"],
+    true],
+
+         //Zweihander -> Champion Upgrade
+    ["/pa/units/medieval/upgrades/imperia/infantry/champion.json",
+    ["/pa/units/medieval/infantry/champion/champion.json"   
+                ],
+    ["/pa/units/medieval/infantry/zweihander/zweihander.json", "/pa/units/medieval/upgrades/imperia/infantry/champion.json"],
+    true],
 
 
 //--------------------------------VESPERIN--------------------------------

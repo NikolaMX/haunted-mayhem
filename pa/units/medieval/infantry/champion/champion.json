@@ -2,10 +2,10 @@
   "si_name":"champion",
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
   "display_name": "Mercenary Champion",
-  "description": "!LOC:Shielded. Fast. Medium reach with AoE. Bonus damage against light and medium.",
+  "description": "!LOC:Heavy Armour. Fast. Medium reach with AoE. Bonus damage against light and medium.",
   "armor_type": "AT_Custom2",
-  "max_health": 200,
-  "build_metal_cost": 250,
+  "max_health": 400,
+  "build_metal_cost": 500,
   "wreckage_health_frac": 0,
   "attachable": {
     "offsets": {

@@ -279,16 +279,16 @@
         }
     ],
     "selection_icon": {
-        "diameter": 21.5
+        "diameter": 35.5
     },
     "mesh_bounds": [
-        15,
-        15,
+        25,
+        25,
         15
     ],
     "placement_size": [
-        15,
-        15
+        35,
+        35
     ],
     "TEMP_texelinfo": 15.8224
 }
