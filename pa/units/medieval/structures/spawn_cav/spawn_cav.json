@@ -17,7 +17,7 @@
         "/pa/units/medieval/structures/mana_shrine/mana_shrine.json"
     ],
     "unit_types": [
-        "UNITTYPE_Custom8",
+        
         "UNITTYPE_Structure",
         "UNITTYPE_Artillery",
         "UNITTYPE_Defense",

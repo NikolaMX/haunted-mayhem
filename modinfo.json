@@ -2,7 +2,7 @@
 	"context": "server",
 	"identifier": "medieval_mode_dev",
 	"display_name": "Medieval Server Local",
-	"description": "Adds a high-tech Energy-based Faction. Development Ongoing",
+	"description": "Adds 3 Medieval and Fantasy themed factions, each with unique units and playstyle",
 	"author": "NikolaMX",
 	"date": "2025-10-03",
 	"build": "124610",
@@ -39,6 +39,12 @@
             "coui://ui/mods/com.pa.nik.medieval/mechanics.js",
 			"coui://ui/mods/com.pa.nik.medieval/research.js",
 			"coui://ui/mods/com.pa.nik.medieval/research_live_game.js"
-        ]
+        ],
+		"new_game": [
+      "coui://ui/mods/restricted-commanders/auth-code.js",
+      "coui://ui/mods/restricted-commanders/commander-filter.js",
+      "coui://ui/mods/restricted-commanders/code-input-ui.js",
+      "coui://ui/mods/restricted-commanders/code-input.css"
+    ]
 	}
 }
