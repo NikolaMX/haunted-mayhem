@@ -121,6 +121,7 @@ model.unitsToLock = [
 
     //Imperia Factories
                     "/pa/units/medieval/structures/tavern/tavern.json",
+                    "/pa/units/medieval/structures/factory_cav/factory_cav.json",
    
 
     //Imperia Lightning Mages
@@ -230,7 +231,7 @@ model.unlockPairs = [
 
 //Cabal Cav T1 
     ["/pa/units/medieval/research/cabal/cavalry/gorilla_t1.json",
-    ["/pa/units/medieval/cavalry/gorilla/gorilla.json", 
+    [
         "/pa/units/medieval/structures/factory_cav/factory_cav_c.json",
         "/pa/units/medieval/research/cabal/cavalry/gorilla_t2.json"
                 ],
@@ -238,7 +239,7 @@ model.unlockPairs = [
     false],
 //Cabal Cav T2
     ["/pa/units/medieval/research/cabal/cavalry/gorilla_t2.json",
-    ["/pa/units/medieval/cavalry/gorilla_big/gorilla_big.json",
+    ["/pa/units/medieval/cavalry/gorilla/gorilla.json",
         "/pa/units/medieval/research/cabal/cavalry/burrow_bear.json"
                 ],
     ["/pa/units/medieval/research/cabal/cavalry/gorilla_t2.json"],
@@ -249,6 +250,7 @@ model.unlockPairs = [
                 ],
     ["/pa/units/medieval/research/cabal/cavalry/burrow_bear.json"],
     false],
+
 
 //Cabal Ranged T1
     ["/pa/units/medieval/research/cabal/ranged/ranged_t1.json",
@@ -272,7 +274,7 @@ model.unlockPairs = [
     false],
 
 
-//Cabal SPIDERS
+//Vesperin SPIDERS
     //Cabal Spiders T1
     ["/pa/units/medieval/research/vesperin/spiders/spiders_t1.json",
     ["/pa/units/medieval/cavalry/jumping_spider/jumping_spider.json",
@@ -407,6 +409,12 @@ model.unlockPairs = [
     ["/pa/units/medieval/infantry/longbow/longbow_c.json", "/pa/units/medieval/upgrades/cabal/infantry/longbow.json"],
     true],
 
+//Massive Vrag
+     ["/pa/units/medieval/upgrades/cabal/cavalry/gorilla_big.json",
+    ["/pa/units/medieval/cavalry/gorilla_big/gorilla_big.json"  
+                ],
+    ["/pa/units/medieval/cavalry/gorilla/gorilla.json", "/pa/units/medieval/upgrades/cabal/cavalry/gorilla_big.json"],
+    true],
 
 
 //--------------------------------IMPERIA--------------------------------
@@ -442,7 +450,8 @@ model.unlockPairs = [
 
 //Light Cav
  ["/pa/units/medieval/research/imperia/cavalry/cavalry_t1.json",
-    ["/pa/units/medieval/cavalry/light_cav/light_cav.json",
+    [   "/pa/units/medieval/structures/factory_cav/factory_cav.json",
+        "/pa/units/medieval/cavalry/light_cav/light_cav.json",
     "/pa/units/medieval/research/imperia/cavalry/cavalry_t2.json" 
                 ],
     ["/pa/units/medieval/research/imperia/cavalry/cavalry_t1.json"],

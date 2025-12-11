@@ -65,9 +65,8 @@ var newBuild = {
 
     //Cavalry
     "/pa/units/medieval/cavalry/light_cav/light_cav.json": ["c_factory", 0, { row: 2, column: 0 }],
-    "/pa/units/medieval/cavalry/heavy_cav/heavy_cav.json": ["c_factory", 0, { row: 1, column: 0 }],
-    "/pa/units/medieval/cavalry/hound/hound.json": ["c_factory", 0, { row: 2, column: 1 }],
-    "/pa/units/medieval/cavalry/recurve_cav/recurve_cav.json": ["c_factory", 0, { row: 2, column: 2 }],
+    "/pa/units/medieval/cavalry/heavy_cav/heavy_cav.json": ["c_factory", 0, { row: 2, column: 2 }],
+    "/pa/units/medieval/cavalry/recurve_cav/recurve_cav.json": ["c_factory", 0, { row: 2, column: 1 }],
     
     //Mercanaries
     "/pa/units/medieval/infantry/zweihander/zweihander.json": ["t_m_factory", 0, { row: 2, column: 0 }],
@@ -93,9 +92,8 @@ var newBuild = {
     
 
     //Riders
-    
-    "/pa/units/medieval/cavalry/gorilla/gorilla.json": ["c_c_factory", 0, { row: 2, column: 0 }],
-    "/pa/units/medieval/cavalry/gorilla_big/gorilla_big.json": ["c_c_factory", 0, { row: 2, column: 1 }],
+    "/pa/units/medieval/cavalry/hound/hound.json": ["c_c_factory", 0, { row: 2, column: 0 }],
+    "/pa/units/medieval/cavalry/gorilla/gorilla.json": ["c_c_factory", 0, { row: 2, column: 1 }],
     "/pa/units/medieval/cavalry/crossbow_bear/crossbow_bear.json": ["c_c_factory", 0, { row: 2, column: 2 }],
     "/pa/units/medieval/cavalry/burrow_bear/burrow_bear.json": ["c_c_factory", 0, { row: 2, column: 3 }],
 
@@ -237,9 +235,9 @@ var newBuild = {
     "/pa/units/medieval/research/cabal/mages/mages_t1.json": ["c_research", 0, { row: 2, column: 4 }],
     
     //Ghosts
-    "/pa/units/medieval/research/cabal/ghosts/ghosts_t3.json": ["c_m_factory", 0, { row: 0, column: 5 }],
-    "/pa/units/medieval/research/cabal/ghosts/ghosts_t2.json": ["c_m_factory", 0, { row: 1, column: 5 }],
-    "/pa/units/medieval/research/cabal/ghosts/ghosts_t1.json": ["c_m_factory", 0, { row: 2, column: 5 }],
+    "/pa/units/medieval/research/cabal/ghosts/ghosts_t3.json": ["c_research", 0, { row: 0, column: 5 }],
+    "/pa/units/medieval/research/cabal/ghosts/ghosts_t2.json": ["c_research", 0, { row: 1, column: 5 }],
+    "/pa/units/medieval/research/cabal/ghosts/ghosts_t1.json": ["c_research", 0, { row: 2, column: 5 }],
 
 
 //Vesperin Research
@@ -275,12 +273,12 @@ var newBuild = {
 //Upgrades
 
     //Cabal
-"/pa/units/medieval/upgrades/cabal/infantry/longbow.json": ["c_upgrades", 0, { row: 0, column: 5 }],
+"/pa/units/medieval/upgrades/cabal/infantry/longbow.json": ["c_upgrades", 0, { row: 2, column: 5 }],
 "/pa/units/medieval/upgrades/cabal/infantry/axe.json": ["c_upgrades", 0, { row: 0, column: 4 }],
 "/pa/units/medieval/upgrades/cabal/infantry/assassin.json": ["c_upgrades", 0, { row: 1, column: 4 }],
 "/pa/units/medieval/upgrades/cabal/infantry/sword_dox.json": ["c_upgrades", 0, { row: 2, column: 4 }],
 
-
+"/pa/units/medieval/upgrades/cabal/cavalry/gorilla_big.json": ["c_upgrades", 0, { row: 1, column: 5 }],
 
     //Imperia
 "/pa/units/medieval/upgrades/imperia/infantry/dual_sword.json": ["i_upgrades", 0, { row: 2, column: 0 }],

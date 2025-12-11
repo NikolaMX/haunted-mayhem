@@ -1,8 +1,8 @@
 {
   "display_name": "!LOC:Ballista Bear",
-  "description": "!LOC:Heavy Cavalry. Medium range. Piercing shot. Ignores Shields and Armour",
+  "description": "!LOC:Light Cavalry. Medium range. Piercing shot. Ignores Shields and Armour",
   "TEMP_texelinfo": 13,
-  "armor_type": "AT_Custom5",
+  "armor_type": "AT_Custom4",
    "build_metal_cost": 1500,
    "max_health": 1500,
   "has_death_effects": true,

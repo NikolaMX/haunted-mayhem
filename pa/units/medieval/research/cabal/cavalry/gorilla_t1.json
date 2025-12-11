@@ -2,8 +2,8 @@
 
   {
     "base_spec":"/pa/units/land/base_vehicle/base_vehicle.json",
-    "display_name":"!LOC:Cavalry T1 unlock",
-    "description":"!LOC:Allows you to build Vrags in the Cavalry factory.",
+    "display_name":"!LOC:Hound T1 unlock",
+    "description":"!LOC:Fast, unarmored hunting dog that does significantly increased damage against cavalry.",
     "si_name": "empty",
     "build_metal_cost": 500,
     "add_to_spatial_db": false,

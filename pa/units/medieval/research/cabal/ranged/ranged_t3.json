@@ -2,8 +2,8 @@
 
   {
     "base_spec":"/pa/units/land/base_vehicle/base_vehicle.json",
-    "display_name":"!LOC:Ballista T3 unlock",
-    "description":"!LOC:Heavy Cavalry, great against other cavalry and high-HP units. Weak against swarms and Air.",
+    "display_name":"!LOC:Ballista Bear T3 unlock",
+    "description":"!LOC:Light Cavalry, great against other cavalry and high-HP units. Weak against swarms and Air.",
     "si_name": "empty",
     "build_metal_cost": 1200,
     "add_to_spatial_db": false,
