@@ -39,7 +39,7 @@
   "guard_layer": "WL_AnySurface",
   "navigation": {
     "aggressive_distance": 40,
-    "type": "amphibious",
+    "type": "land-small",
     "acceleration": 12,
     "brake": -1,
     "move_speed": 12,
@@ -55,17 +55,12 @@
           "layer": "surface_and_air",
           "channel": "sight",
           "shape": "capsule",
-          "radius": 105
-        },
-        {
-          "layer": "underwater",
-          "channel": "sight",
-          "shape": "capsule",
-          "radius": 105
+          "radius": 100
         }
       ]
     }
   },
+  "has_death_effects": true,
   "model": {
     "filename": "/pa/units/medieval/infantry/champion/champion.papa",
     "animations": {

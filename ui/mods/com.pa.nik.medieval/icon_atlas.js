@@ -20,6 +20,7 @@ var paeiouIcons = [
     "dual_sword",
     "sword_light",
     "sword_light_c",
+    "zombie",
     
     // Ranged
     "javelin",
@@ -62,6 +63,7 @@ var paeiouIcons = [
     "pumpkin",
     "munchkin",
     "boomkin",
+    "jack_o",
 
     //Elementals
     "bugsniper",

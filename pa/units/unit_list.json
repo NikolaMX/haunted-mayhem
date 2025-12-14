@@ -97,6 +97,8 @@
     "/pa/units/medieval/cavalry/pumpkin/pumpkin.json",
     "/pa/units/medieval/cavalry/munchkin/munchkin.json",
     "/pa/units/medieval/cavalry/boomkin/boomkin.json",
+    "/pa/units/medieval/cavalry/jack_o/jack_o.json",
+    
 
 
     "/pa/units/medieval/cavalry/bugsniper/bugsniper.json",
@@ -181,6 +183,8 @@
     "/pa/units/medieval/misc/web/webling/webling.json",
     "/pa/units/medieval/misc/projection/projection.json",
 
+    "/pa/units/medieval/misc/soul/soul.json",
+    "/pa/units/medieval/infantry/zombie/zombie.json",
     
 
 
@@ -229,6 +233,10 @@
     "/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t2.json",
     "/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t1.json",
 
+    "/pa/units/medieval/research/vesperin/pumpkin/witch_t3.json",
+    "/pa/units/medieval/research/vesperin/pumpkin/witch_t2.json",
+    "/pa/units/medieval/research/vesperin/pumpkin/witch_t1.json",
+
     "/pa/units/medieval/research/cabal/ghosts/ghosts_t3.json",
     "/pa/units/medieval/research/cabal/ghosts/ghosts_t2.json",
     "/pa/units/medieval/research/cabal/ghosts/ghosts_t1.json",
@@ -238,7 +246,6 @@
 "/pa/units/medieval/upgrades/cabal/infantry/assassin.json",
 "/pa/units/medieval/upgrades/cabal/infantry/axe.json",
 "/pa/units/medieval/upgrades/cabal/infantry/longbow.json",
-
 "/pa/units/medieval/upgrades/cabal/cavalry/gorilla_big.json",
 
 

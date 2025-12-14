@@ -1,34 +1,31 @@
 {
-    "base_spec": "/pa/tools/base_artillery_turret/base_artillery_turret.json",
-    "ammo_id": "/pa/units/medieval/structures/spawn_cav/spawn_cav_ammo1.json",
-    "force_fire_from_muzzle": true,
-    "rate_of_fire": 0.5,
-    "max_firing_velocity": 150,
-    "min_firing_velocity": 100,
-    "ammo_source": "time",
-    "ammo_capacity": 1,
-    "ammo_demand": 1,
-    "ammo_per_shot": 0.25,
-    "max_range": 40,
-    "yaw_rate": 360,
-    "pitch_rate": 360,
-    "yaw_range": 180,
-    "pitch_range": 89.9,
-    "firing_arc_yaw": 0,
-    "firing_arc_pitch": 5,
-    "auto_attack": true,
-    "firing_standard_deviation": 3,
-    "carpet_fire": true,
-    "carpet_wait_for_full_ammo": false,
-    "physics": {
-        "radius": 1,
-        "gravity_scalar": 1,
-        "add_to_spatial_db": false
-    },
-    "target_layers": [
-        "WL_LandHorizontal",
-        "WL_Seafloor",
-        "WL_WaterSurface",
-        "WL_Underwater"
-    ]
+  "base_spec": "/pa/tools/base_missile_tactical_turret/base_missile_tactical_turret.json",
+  "ammo_id": "/pa/units/medieval/structures/spawn_cav/spawn_cav_ammo.json",
+  "rate_of_fire": 1,
+  "idle_aim_delay": 0.1,
+  "max_range": 180,
+  "yaw_rate": 0,
+  "pitch_rate": 0,
+  "yaw_range": 0,
+  "pitch_range": 0,
+  "firing_arc_yaw": 180,
+  "firing_arc_pitch": 180,
+  "spread_fire": true,
+  "auto_attack": true,
+  "manual_fire": true,
+  "auto_task_type": "anti_entity",
+  "anti_entity_targets_units": true,
+ 
+ "anti_entity_targets": [
+    "/pa/units/medieval/misc/soul/soul.json",
+    "/pa/units/medieval/flying/eagle/eagle.json"
+    
+  ],
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_Seafloor",
+    "WL_WaterSurface",
+    "WL_Air",
+    "WL_Underwater"
+  ]
 }

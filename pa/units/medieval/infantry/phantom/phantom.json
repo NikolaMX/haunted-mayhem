@@ -162,5 +162,6 @@
         "decals": [
             "/pa/effects/decal/scorch_cyan_decal.json"
         ]
-    }
+    },
+  "spawn_unit_on_death": ""
 }

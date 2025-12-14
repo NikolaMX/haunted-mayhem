@@ -140,5 +140,6 @@
 
   "death_weapon": {
     "ground_ammo_spec": "/pa/units/land/base_bot/base_bot_death_ammo.json"
-  }
+  },
+  "spawn_unit_on_death": "/pa/units/medieval/misc/soul/soul.json"
 }

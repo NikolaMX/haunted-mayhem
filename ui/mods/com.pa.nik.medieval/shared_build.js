@@ -103,7 +103,9 @@ var newBuild = {
     
     //Pumpkins
     "/pa/units/medieval/structures/witch_hut/witch_hut.json": ["c_b_factory", 0, { row: 0, column: 1 }],
-    "/pa/units/medieval/flying/witch/witch.json": ["c_b_factory", 0, { row: 1, column: 1 }],
+    "/pa/units/medieval/cavalry/jack_o/jack_o.json": ["c_b_factory", 0, { row: 1, column: 1 }],
+    "/pa/units/medieval/flying/witch/witch.json": ["c_b_factory", 0, { row: 2, column: 1 }],
+    
 
     "/pa/units/medieval/cavalry/pumpkin/pumpkin.json": ["c_b_factory", 0, { row: 0, column: 0 }],
     "/pa/units/medieval/cavalry/munchkin/munchkin.json": ["c_b_factory", 0, { row: 1, column: 0 }],
@@ -269,6 +271,11 @@ var newBuild = {
     "/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t3.json": ["v_research", 0, { row: 0, column: 5 }],
     "/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t2.json": ["v_research", 0, { row: 1, column: 5 }],
     "/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t1.json": ["v_research", 0, { row: 2, column: 5 }],
+
+    //Witches
+    "/pa/units/medieval/research/vesperin/pumpkin/witch_t3.json": ["v_research", 0, { row: 0, column: 6 }],
+    "/pa/units/medieval/research/vesperin/pumpkin/witch_t2.json": ["v_research", 0, { row: 1, column: 6 }],
+    "/pa/units/medieval/research/vesperin/pumpkin/witch_t1.json": ["v_research", 0, { row: 2, column: 6 }],
 
 //Upgrades
 

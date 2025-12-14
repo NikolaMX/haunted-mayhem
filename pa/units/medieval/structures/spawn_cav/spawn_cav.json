@@ -25,8 +25,7 @@
         "UNITTYPE_Basic"
     ],
     "command_caps": [
-        "ORDER_Attack",
-        "ORDER_FireSecondaryWeapon"
+        
     ],
     "guard_layer": "WL_AnySurface",
     "recon": {
@@ -36,13 +35,13 @@
                     "layer": "surface_and_air",
                     "channel": "sight",
                     "shape": "capsule",
-                    "radius": 100
+                    "radius": 160
                 },
                 {
                     "layer": "underwater",
                     "channel": "sight",
                     "shape": "capsule",
-                    "radius": 100
+                    "radius": 160
                 }
             ]
         }
@@ -69,25 +68,11 @@
     "nearby_target_tick_update_interval": 15,
     "tools": [
         {
-            "spec_id": "/pa/units/medieval/structures/spawn_cav/spawn_cav_tool_weapon1.json",
-            "aim_bone": "bone_turret",
-            "projectiles_per_fire": 6,
-            "muzzle_bone": [
-                "socket_centerMuzzle",
-                "socket_centerMuzzle.001",
-                "socket_centerMuzzle.002",
-                "socket_centerMuzzle.003",
-                "socket_centerMuzzle.004",
-                "socket_centerMuzzle.005"
-            ]
-        },
-        {
             "spec_id": "/pa/units/medieval/structures/spawn_cav/spawn_cav_tool_weapon.json",
             "aim_bone": "bone_turret",
-            "projectiles_per_fire": 2,
+            "projectiles_per_fire": 1,
             "muzzle_bone": [
-                "socket_centerMuzzle.006",
-                "socket_centerMuzzle.007"
+                "socket_centerMuzzle"
             ]
         }
     ],

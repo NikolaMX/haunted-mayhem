@@ -1,37 +1,39 @@
 {
-    "base_spec": "/pa/tools/base_artillery_turret/base_artillery_turret.json",
-    "ammo_id": "/pa/units/medieval/infantry/ghostmage/ghostmage_ammo.json",
-    "force_fire_from_muzzle": true,
-    "rate_of_fire": 10,
-    "max_firing_velocity": 150,
-    "min_firing_velocity": 100,
-    "max_range": 50,
-    "yaw_rate": 360,
-    "pitch_rate": 360,
-    "yaw_range": 180,
-    "pitch_range": 89.9,
-    "firing_arc_yaw": 0,
-    "firing_arc_pitch": 5,
-    "auto_attack": true,
-    "firing_standard_deviation": 3,
+
+    
+  "base_spec": "/pa/tools/base_missile_tactical_turret/base_missile_tactical_turret.json",
+  "ammo_id": "/pa/units/medieval/infantry/ghostmage/ghostmage_ammo.json",
+  "rate_of_fire": 5,
+  "idle_aim_delay": 5,
+  "max_range": 75,
+  "yaw_rate": 3600,
+  "pitch_rate": 3600,
+  "yaw_range": 180,
+  "pitch_range": 180,
+  "firing_arc_yaw": 180,
+  "firing_arc_pitch": 180,
+  "spread_fire": true,
+  "auto_attack": true,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_Seafloor",
+    "WL_WaterSurface",
+    "WL_Air",
+    "WL_Underwater"
+  ],
+"exclude_unit_types": "Custom8 | Custom9 | Custom10",
     "physics": {
         "radius": 1,
         "gravity_scalar": 1,
         "add_to_spatial_db": false
     },
-    "target_layers": [
-        "WL_LandHorizontal",
-        "WL_Seafloor",
-        "WL_WaterSurface",
-        "WL_Underwater"
-    ],
 
 
-    "ammo_source": "time",
-    "ammo_capacity": 15,
-    "ammo_demand": 1,
-    "ammo_per_shot": 15,
-    "carpet_fire": true,
-    "charge_ammo_when_targeting": true,
-    "carpet_wait_for_full_ammo": true
+
+    "ammo_source": "energy",
+    "ammo_capacity": 450,
+    "ammo_demand": 15,
+    "ammo_per_shot": 150,
+    "carpet_fire": false,
+    "charge_ammo_when_targeting": false
 }

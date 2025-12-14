@@ -4,7 +4,7 @@
   "display_name": "Ghost",
   "description": "!LOC:Ghost. Vulnerable only to magic attacks.",
   "armor_type": "AT_Custom7",
-  "max_health": 100,
+  "max_health": 50,
   "build_metal_cost": 300,
   "wreckage_health_frac": 0,
   "attachable": {
@@ -133,5 +133,6 @@
   "decals": [
       "/pa/effects/decal/scorch_white_small_decal.json"
     ]
-  }
+  },
+  "spawn_unit_on_death": ""
 }

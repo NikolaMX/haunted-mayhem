@@ -75,13 +75,19 @@ model.unitsToLock = [
                     "/pa/units/medieval/research/cabal/infantry/halbeard.json",
                     
 
-    //Cabal Pumpkins
+    //Vesperin Pumpkin Research
                     "/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t2.json",
                     "/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t3.json",
+    //Vesperin Witch Research
+                    "/pa/units/medieval/research/vesperin/pumpkin/witch_t1.json",
+                    "/pa/units/medieval/research/vesperin/pumpkin/witch_t2.json",
+                    "/pa/units/medieval/research/vesperin/pumpkin/witch_t3.json",                
 
-    //Cabal Pumpkins
+    //Vesperin Pumpkins
+                    "/pa/units/medieval/cavalry/munchkin/munchkin.json",
                     "/pa/units/medieval/cavalry/pumpkin/pumpkin.json",
                     "/pa/units/medieval/flying/witch/witch.json",
+                    "/pa/units/medieval/cavalry/jack_o/jack_o.json",
                     "/pa/units/medieval/structures/witch_hut/witch_hut.json",
     //Cabal Dark Mages
                     "/pa/units/medieval/infantry/acolyte/acolyte.json",
@@ -575,14 +581,14 @@ model.unlockPairs = [
     //Pumpkin Shrine T1
     ["/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t1.json",
     ["/pa/units/medieval/structures/blood_shrine/blood_shrine.json",
+        "/pa/units/medieval/research/vesperin/pumpkin/witch_t1.json",
         "/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t2.json"
                 ],
     ["/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t1.json"],
     false],
-    //Pumpkin Witch T2
+    //Munchkin T2
     ["/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t2.json",
-    ["/pa/units/medieval/flying/witch/witch.json",
-        "/pa/units/medieval/structures/witch_hut/witch_hut.json",
+    ["/pa/units/medieval/cavalry/munchkin/munchkin.json",
         "/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t3.json"
                 ],
     ["/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t2.json"],
@@ -593,6 +599,33 @@ model.unlockPairs = [
                 ],
     ["/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t3.json"],
     false],
+
+
+//Witches
+    //Witch Unlock T1
+    ["/pa/units/medieval/research/vesperin/pumpkin/witch_t1.json",
+    [   "/pa/units/medieval/flying/witch/witch.json",
+        "/pa/units/medieval/research/vesperin/pumpkin/witch_t2.json"
+                ],
+    ["/pa/units/medieval/research/vesperin/pumpkin/witch_t1.json"],
+    false],
+    
+    //Jack_o Unlock T2
+    ["/pa/units/medieval/research/vesperin/pumpkin/witch_t2.json",
+    ["/pa/units/medieval/cavalry/jack_o/jack_o.json",
+    "/pa/units/medieval/research/vesperin/pumpkin/witch_t3.json"
+                ],
+    ["/pa/units/medieval/research/vesperin/pumpkin/witch_t2.json"],
+    false],
+
+    //Witch Hut Unlock T3
+    ["/pa/units/medieval/research/vesperin/pumpkin/witch_t3.json",
+    ["/pa/units/medieval/structures/witch_hut/witch_hut.json" 
+                ],
+    ["/pa/units/medieval/research/vesperin/pumpkin/witch_t3.json"],
+    false],
+
+
 
 
 //Snakes

@@ -2,8 +2,8 @@
 
   {
     "base_spec":"/pa/units/land/base_vehicle/base_vehicle.json",
-    "display_name":"!LOC:Mercenary T1 Unlock",
-    "description":"!LOC:Allows you to byild Mercenary Taverns and Zweihander Mercenaries.",
+    "display_name":"!LOC:Zweihander T1 Unlock",
+    "description":"!LOC:Medium armour infantry. Very durable. Excells against infantry.",
     "si_name": "empty",
     "build_metal_cost": 500,
     "add_to_spatial_db": false,

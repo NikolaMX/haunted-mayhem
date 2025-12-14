@@ -1,7 +1,7 @@
 {
     "base_spec": "/pa/units/land/base_bot/base_bot.json",
     "display_name": "Ghost Mage",
-    "description": "!LOC:Ghost. Generates mana while in combat. Summons ghosts if it remains in continuous combat for 15 seconds.",
+    "description": "!LOC:Ghost. Can hover through obstacles and over water and lava. Spawns ghosts from the bodies of slain enemies.",
     "strategic_icon_priority": 0,
     "wreckage_health_frac": 0,
     "max_health": 800,
@@ -82,18 +82,11 @@
     "tools": [
         {
             "spec_id": "/pa/units/medieval/infantry/ghostmage/ghostmage_tool_weapon.json",
-            "aim_bone": "bone_turret",
+            "aim_bone": "bone_top_muzzle",
             "primary_weapon": true,
-            "projectiles_per_fire": 3,
+            "projectiles_per_fire": 1,
             "muzzle_bone": [
-                "socket_leftMuzzle",
-                "socket_leftMuzzle",
-                "socket_leftMuzzle",
-                "socket_leftMuzzle",
-                "socket_leftMuzzle",
-                "socket_leftMuzzle",
-                "socket_leftMuzzle",
-                "socket_leftMuzzle"
+                "bone_top_muzzle"
             ]
         },
         {
@@ -156,5 +149,6 @@
     "decals": [
       "/pa/effects/decal/scorch_white_decal.json"
     ]
-}
+},
+  "spawn_unit_on_death": ""
 }

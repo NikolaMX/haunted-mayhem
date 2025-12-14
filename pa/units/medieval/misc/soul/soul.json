@@ -1,0 +1,114 @@
+{
+    "base_spec": "/pa/units/sea/base_ship/base_ship.json",
+    "display_name": "soul",
+    "description": "!LOC:What remains of living beings",
+    "si_name": "empty",
+    "build_metal_cost": 10,
+    "max_health": 40000,
+    "usable": false,
+    "wreckage_health_frac": 0.0,
+    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "armor_type": "AT_Hover",
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ]
+        }
+    },
+    "command_caps": [
+     
+    ],
+    "unit_types": [
+        "UNITTYPE_Naval",
+        "UNITTYPE_Basic",
+        "UNITTYPE_Sub",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Custom58",
+        "UNITTYPE_NoBuild"
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": ""
+        },
+        "fired": {
+            "audio_cue": ""
+        },
+        "died": {
+            "audio_cue": "",
+            "effect_spec": "/pa/units/medieval/misc/stun/none.pfx"
+        },
+        "teleported": {
+            "audio_cue": "",
+            "effect_spec": "/pa/units/medieval/misc/stun/none.pfx"
+        }
+    },
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": ""
+        }
+    },
+    "tools": [
+        
+        
+
+    ],
+    "navigation": {
+        "type": "Structure",
+        "shape": "Box",
+        "collision_layers": "WL_Orbital",
+        "radius": 0.1,
+        "air_friction": 1.0,
+        "allow_pushing": false,
+        "push_sideways": false,
+        "allow_underground": true
+    },
+    "physics": {
+        "radius": 1,
+        "ignore_gravity": true,
+        "allow_underground": true,
+        "gravity_scalar": 1,
+        "push_sideways": false,
+        "allow_pushing": false,
+        "air_friction": 1.0,
+        "add_to_spatial_db": true
+    },
+    "recon": {
+        "observable": {
+            "layer": "underwater",
+            "ignore_radar": true
+        },
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 0
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/medieval/misc/stun/empty_model.papa"
+    },
+    "selection_icon": {
+        "diameter": 0
+    },
+    "mesh_bounds": [
+        0.1,
+        0.1,
+        0.1
+    ],
+    "TEMP_texelinfo": 9.4567
+}
