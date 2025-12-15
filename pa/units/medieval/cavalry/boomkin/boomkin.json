@@ -91,6 +91,7 @@
     }
   },
   "guard_layer": "WL_AnySurface",
+  "guard_radius": 30,
   "maintain_priority_target": false,
   "max_health": 20,
   "mesh_bounds": [
