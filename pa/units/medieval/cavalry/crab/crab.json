@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Crab",
-  "description": "!LOC:Beast. Heavily armoured. Fast.",
+  "description": "!LOC:Heavy Cavalry. Fast. Strong against infantry.",
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
   "armor_type": "AT_Custom5",
   "wreckage_health_frac": 1.0,

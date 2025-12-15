@@ -6,7 +6,7 @@
   "armor_type": "AT_Custom9",
   "max_health": 800,
   "build_metal_cost": 1000,
-  "wreckage_health_frac": 0,
+  "wreckage_health_frac": 1.0,
   "attachable": {
     "offsets": {
       "root": [
@@ -80,6 +80,14 @@
       "muzzle_bone": [
         "weapon"
       ]
+    },
+    {
+      "spec_id": "/pa/units/medieval/cavalry/jack_o/jack_o_tool_weapon_fire.json",
+      "aim_bone": "weapon",
+      "projectiles_per_fire": 1,
+      "muzzle_bone": [
+        "weapon"
+      ]
     }
   ],
   "events": {
@@ -87,8 +95,8 @@
       "audio_cue": "/SE/Build_Complete/bot"
     },
     "fired": {
-      "audio_cue": "/SE/Weapons/bot/assault_fire",
-      "effect_spec": ""
+      "audio_cue": "",
+      "effect_spec": "/pa/units/medieval/cavalry/jack_o/flame.pfx weapon"
     }
   },
   "audio": {

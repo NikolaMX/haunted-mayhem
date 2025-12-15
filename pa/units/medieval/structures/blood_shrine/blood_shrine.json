@@ -1,9 +1,9 @@
 {
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "unit_name": "Blood Shrine",
+  "unit_name": "Pumpkin Patch",
   "si_name": "blood_shrine",
-  "display_name": "!LOC:Pumpkin Shrine",
-  "description": "!LOC:Summons all sorts of other worldly horrors.",
+  "display_name": "!LOC:Pumpkin Patch",
+  "description": "!LOC:Summons undead Pumpkin monsters and Witches that are resistant to magic",
   "max_health": 2000,
   "build_metal_cost": 800,
   "atrophy_rate": 2.5,
@@ -20,7 +20,7 @@
   "factory": {
     "store_units": false,
     "spawn_points": [
-      "bone_platform"
+      "bone_root"
     ],
     "default_build_stance": "Continuous"
   },
@@ -68,7 +68,7 @@
   "model": [
     {
       "layer": "WL_LandHorizontal",
-      "filename": "/pa/units/medieval/structures/blood_shrine/arm_air_repair_pad.papa",
+      "filename": "/pa/units/medieval/structures/blood_shrine/pumpkin.papa",
       "animtree": "/pa/units/medieval/structures/factory_infantry/factory_1_anim_tree.json",
       "skirt_decal": "/pa/effects/specs/skirt_energy_adv.json"
     }
