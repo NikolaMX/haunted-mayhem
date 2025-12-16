@@ -217,8 +217,8 @@ if (model.BuildSet && model.BuildSet.tabsTemplate) {
         
 
 //Imperia
-        ["i_l_factory", "!LOC:imperia lightning"],
-        ["i_w_factory", "!LOC:imperia wind"],
+        ["i_l_factory", "!LOC:lightning mages"],
+        ["i_w_factory", "!LOC:wind mages"],
         ["t_t_factory", "!LOC:imperia mercenaries"],
     
         ["i_i_factory", "!LOC:imperia infantry"],    
@@ -236,21 +236,16 @@ if (model.BuildSet && model.BuildSet.tabsTemplate) {
 
         ["a_factory", "!LOC:vesperin archers"],
 
-        ["i_f_factory", "!LOC:vesperin firemage"],
-        ["c_b_factory", "!LOC:vesperin pumpkins"],
-        ["c_s_factory", "!LOC:vesperin spiders"],
-        ["v_s_factory", "!LOC:vesperin snakes"],
+        ["i_f_factory", "!LOC:fire mage"],
+        ["c_b_factory", "!LOC:pumpkins"],
+        ["c_s_factory", "!LOC:spiders"],
+        ["v_s_factory", "!LOC:snakes"],
 
-
-
-
-
-    
 
 
 //Cabal
-        ["c_m_factory", "!LOC:cabal mages"],        
-        ["c_g_factory", "!LOC:cabal specters"],
+        ["c_m_factory", "!LOC:deathmages"],        
+        ["c_g_factory", "!LOC:specters"],
         
         ["c_i_factory", "!LOC:cabal infantry"],
         ["c_a_factory", "!LOC:cabal archers"],

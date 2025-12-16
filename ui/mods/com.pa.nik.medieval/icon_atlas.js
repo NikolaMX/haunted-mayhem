@@ -97,6 +97,7 @@ var paeiouIcons = [
     "witch",
     "flying_serpent",
     "flying_snake",
+    "dragon",
 
 
     // Structures

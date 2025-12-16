@@ -5,7 +5,7 @@
     "AT_Custom0": 1,
     "AT_Custom1": 0.75,
     "AT_Custom2": 0.5,
-    "AT_Custom3": 0.25,
+    "AT_Custom3": 0.5,
     "AT_Custom4": 0.75,
     "AT_Custom5": 0.5,
     "AT_Custom6": 0.25,
@@ -13,7 +13,7 @@
     "AT_Custom8": 1,
     "AT_Custom9": 1,
 
-    "AT_Structure": 4.0,
+    "AT_Structure": 10.0,
     "AT_Hover": 1.0,
     "AT_Air": 1.0
     

@@ -24,6 +24,7 @@ var newBuild = {
     //Fire
     "/pa/units/medieval/infantry/firemage/firemage.json": ["i_f_factory", 0, { row: 2, column: 1 }],
     "/pa/units/medieval/cavalry/fire_elemental/fire_elemental.json": ["i_f_factory", 0, { row: 2, column: 0 }],
+    "/pa/units/medieval/flying/dragon/dragon.json": ["i_f_factory", 0, { row: 2, column: 2 }],
 
     //Wind
     "/pa/units/medieval/infantry/fogmage/fogmage.json": ["i_w_factory", 0, { row: 2, column: 1 }],
