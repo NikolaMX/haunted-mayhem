@@ -68,7 +68,7 @@
   "model": [
      {
       "layer": "WL_LandHorizontal",
-      "filename": "/pa/units/medieval/structures/blood_shrine/arm_air_repair_pad.papa",
+      "filename": "/pa/units/medieval/structures/serpent_shrine/arm_air_repair_pad.papa",
       "animtree": "/pa/units/medieval/structures/factory_infantry/factory_1_anim_tree.json",
       "skirt_decal": "/pa/effects/specs/skirt_energy_adv.json"
     }
