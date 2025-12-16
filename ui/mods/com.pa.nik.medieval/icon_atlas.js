@@ -145,6 +145,7 @@ var paeiouIcons = [
 
     //Mines
     "web_mine",
+    "seeking_blast",
 
     // Misc
     "empty", //stun

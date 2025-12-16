@@ -1,0 +1,143 @@
+{
+  "display_name": "!LOC:Magic Trap",
+  "description": "!LOC:Activates when enemies are nearby, shooting multiple magic missiles at them.",
+  "TEMP_texelinfo": 2.37699,
+  "alt_area_build_separation": 20.0,
+  "alt_area_build_type": "Sphere",
+  "alt_area_max_radius": 20.0,
+  "area_build_pattern": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "area_build_separation": 20.0,
+  "area_build_type": "Sphere",
+  "area_max_radius": 150.0,
+  "build_metal_cost": 300,
+  "energy_efficiency_requirement": 0.9,
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/barrier"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/barrier",
+      "effect_spec": "/pa/units/medieval/cavalry/spider/white_hit.pfx"
+    }
+  },
+  "max_health": 10,
+  "mesh_bounds": [
+    4.0,
+    4.0,
+    1.0
+  ],
+  "model": [
+    {
+      "layer": "WL_LandHorizontal",
+      "filename": "/pa/units/medieval/structures/seeking_blast/land_mine.papa"
+    }
+  ],
+  "physics": {
+    "type": "Structure",
+    "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "shape": "Box",
+    "radius": 1,
+    "allow_pushing": false,
+    "push_sideways": false,
+    "allow_underground": false,
+    "collide_with_types": [
+      "Projectile"
+    ]
+  },
+  "recon": {
+    "observable": {
+      "layer": "mine"
+    },
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "sphere",
+          "radius": 25
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": 7.0
+  },
+  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+  "strategic_icon_priority": 3,
+  "tools": [
+    {
+      "spec_id": "/pa/units/medieval/structures/seeking_blast/seeking_blast_tool_weapon.json",
+      "aim_bone": "bone_root",
+      "muzzle_bone": "bone_root"
+    }
+  ],
+  "unit_name": "Magic Trap",
+  "unit_types": [
+    "UNITTYPE_Custom8",
+    "UNITTYPE_Structure",
+    "UNITTYPE_Land",
+    "UNITTYPE_Naval",
+    "UNITTYPE_Defense",
+    "UNITTYPE_FabBuild"
+  ],
+  "wreckage_health_frac": 0.0
+}

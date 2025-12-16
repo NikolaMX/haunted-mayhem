@@ -46,6 +46,7 @@
     }
   ],
   "guard_layer": "WL_AnyHorizontalGroundOrWaterSurface",
+   "guard_radius": 50,
   "has_death_effects": true,
   "model": {
     "filename": "/pa/units/medieval/cavalry/goliath/goliathX.papa",

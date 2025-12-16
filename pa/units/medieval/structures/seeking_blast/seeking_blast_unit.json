@@ -1,0 +1,27 @@
+{
+    "unit_name": "Seeking Blast",
+    "display_name": "!LOC:Seeking Blast",
+    "si_name":"blank_blip",
+    "description": "!LOC: Spawns several seeking projectiles that target the nearest enemies",
+    "base_spec": "/pa/units/heroes/abilities/ability_base.json",
+    "physics": {
+      "add_to_spatial_db": false,
+      "radius":0.05
+    },
+    "max_health": 2000,
+    "passive_health_regen": -1000,
+    "unit_types": [
+        "UNITTYPE_Structure",
+        "UNITTYPE_Land"
+    ],
+    "command_caps": [
+        "ORDER_FireSecondaryWeapon",
+        "ORDER_Attack"
+      ],
+      "tools": [
+        {
+          "spec_id": "/pa/units/heroes/abilities/seeking_blast/seeking_blast_weapon.json",
+          "aim_bone": "bone_body"
+        }
+        ]
+}

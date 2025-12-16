@@ -134,6 +134,7 @@ model.unitsToLock = [
                     "/pa/units/medieval/structures/arcmage_tower/arcmage_tower.json",
                     "/pa/units/medieval/cavalry/bugsniper/bugsniper.json",
                     "/pa/units/medieval/infantry/arcanist/arcanist.json",
+                    "/pa/units/medieval/structures/seeking_blast/seeking_blast.json",
             //Lightning Research            
                             
                             "/pa/units/medieval/research/imperia/lightning/lightning_t2.json",
@@ -547,7 +548,8 @@ model.unlockPairs = [
     false],  
 //Arcanist
 ["/pa/units/medieval/research/imperia/lightning/lightning_t3.json",
-    ["/pa/units/medieval/infantry/arcanist/arcanist.json"
+    ["/pa/units/medieval/infantry/arcanist/arcanist.json",
+        "/pa/units/medieval/structures/seeking_blast/seeking_blast.json"
                 ],
     ["/pa/units/medieval/research/imperia/lightning/lightning_t3.json"],
     false],  

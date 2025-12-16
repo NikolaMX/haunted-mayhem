@@ -1,0 +1,84 @@
+{
+    "unit_name": "Seeking Blast",
+    "display_name": "!LOC:Seeking Blast",
+    "si_name":"empty",
+    "description": "!LOC: Spawns several seeking projectiles that target the nearest enemies",
+    "base_spec": "/pa/units/land/land_mine/land_mine.json",
+    "physics": {
+      "add_to_spatial_db": false,
+      "radius":0.05
+    },
+    "max_health": 3500,
+    "passive_health_regen": -1000,
+    "unit_types": [
+        "UNITTYPE_Structure",
+        "UNITTYPE_Land"
+    ],
+    "model": [
+    {
+      "layer": "WL_LandHorizontal",
+      "filename": "/pa/units/medieval/structures/seeking_blast/land_mine.papa"
+    }
+  ],
+  "recon": {
+    "observable": {
+      "layer": "mine"
+    },
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "sphere",
+          "radius": 40
+        }
+      ]
+    }
+  },
+    "command_caps": [
+        "ORDER_FireSecondaryWeapon",
+        "ORDER_Attack"
+      ],
+      "tools": [
+        {
+          "spec_id": "/pa/units/medieval/structures/seeking_blast/active/seeking_blast_active_tool_weapon.json",
+          "aim_bone": "aimbone1",
+          "muzzle_bone": "muzzle1"
+        },
+        {
+          "spec_id": "/pa/units/medieval/structures/seeking_blast/active/seeking_blast_active_tool_weapon.json",
+          "aim_bone": "aimbone2",
+          "muzzle_bone": "muzzle2"
+        },
+        {
+          "spec_id": "/pa/units/medieval/structures/seeking_blast/active/seeking_blast_active_tool_weapon.json",
+          "aim_bone": "aimbone3",
+          "muzzle_bone": "muzzle3"
+        },
+        {
+          "spec_id": "/pa/units/medieval/structures/seeking_blast/active/seeking_blast_active_tool_weapon.json",
+          "aim_bone": "aimbone4",
+          "muzzle_bone": "muzzle4"
+        },
+        {
+          "spec_id": "/pa/units/medieval/structures/seeking_blast/active/seeking_blast_active_tool_weapon.json",
+          "aim_bone": "aimbone5",
+          "muzzle_bone": "muzzle5"
+        },
+        {
+          "spec_id": "/pa/units/medieval/structures/seeking_blast/active/seeking_blast_active_tool_weapon.json",
+          "aim_bone": "aimbone6",
+          "muzzle_bone": "muzzle6"
+        },
+        {
+          "spec_id": "/pa/units/medieval/structures/seeking_blast/active/seeking_blast_active_tool_weapon.json",
+          "aim_bone": "aimbone7",
+          "muzzle_bone": "muzzle7"
+        },
+        {
+          "spec_id": "/pa/units/medieval/structures/seeking_blast/active/seeking_blast_active_tool_weapon.json",
+          "aim_bone": "aimbone8",
+          "muzzle_bone": "muzzle8"
+        }
+        ]
+}

@@ -176,6 +176,7 @@ var newBuild = {
 
 
 //Defenses
+"/pa/units/medieval/structures/seeking_blast/seeking_blast.json": ["i_defense", 0, { row: 2, column: 0 }],
 "/pa/units/medieval/structures/giga_wall/giga_wall.json": ["i_defense", 0, { row: 1, column: 0 }],
 "/pa/units/medieval/structures/attack_tower/attack_tower.json": ["i_defense", 0, { row: 1, column: 1 }],
 "/pa/units/medieval/structures/arrow_tower/arrow_tower.json": ["i_defense", 0, { row: 2, column: 1 }],

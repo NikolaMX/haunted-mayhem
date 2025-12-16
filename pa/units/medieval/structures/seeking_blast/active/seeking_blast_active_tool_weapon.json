@@ -1,0 +1,21 @@
+{
+    "ammo_id": "/pa/units/medieval/structures/seeking_blast/active/seeking_blast_active_ammo.json",
+    "auto_attack": true,
+    "base_spec": "/pa/tools/base_missile_tactical_turret/base_missile_tactical_turret.json",
+    "firing_arc_pitch": 360,
+    "firing_arc_yaw": 360,
+    "firing_standard_deviation": 25,
+    "force_fire_from_muzzle": true,
+    "max_range": 50,
+    "pitch_range": 360,
+    "pitch_rate": 3600,
+    "rate_of_fire": 0.5,
+    "spread_fire": true,
+    "target_layers": [
+      "WL_LandHorizontal",
+      "WL_WaterSurface"
+    ],
+    "tool_type": "TOOL_Weapon",
+    "yaw_range": 360,
+    "yaw_rate": 3600
+  }

@@ -170,7 +170,8 @@
     
 
     "/pa/units/medieval/structures/web_mine/web_mine.json",
-
+    "/pa/units/medieval/structures/seeking_blast/seeking_blast.json",
+    "/pa/units/medieval/structures/seeking_blast/active/seeking_blast_active.json",
 
 
     "/pa/units/medieval/misc/stun/stun.json",
