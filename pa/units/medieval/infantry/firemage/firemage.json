@@ -66,22 +66,16 @@
                     "channel": "sight",
                     "shape": "capsule",
                     "radius": 150
-                },
-                {
-                    "layer": "underwater",
-                    "channel": "sight",
-                    "shape": "capsule",
-                    "radius": 150
                 }
             ]
         }
     },
     "model": {
-        "filename": "/pa/units/medieval/infantry/mage/mage.papa",
+        "filename": "/pa/units/medieval/infantry/firemage/wizard.papa",
         "animations": {
-            "walk": "/pa/units/medieval/infantry/mage/mage_anim_walk.papa",
-            "idle": "/pa/units/medieval/infantry/mage/mage_anim_idle.papa",
-            "walk_stop": "/pa/units/medieval/infantry/mage/mage__anim_walkStop.papa"
+            "walk": "/pa/units/medieval/infantry/firemage/wizard_anim_walk.papa",
+            "idle": "/pa/units/medieval/infantryfiremage/wizard_anim_idle.papa",
+            "walk_stop": "/pa/units/medieval/infantry/firemage/wizard_anim_walkStop.papa"
         },
         "animtree": "/pa/anim/anim_trees/commander_imperial_anim_tree.json",
         "walk_speed": 7.0
@@ -91,15 +85,21 @@
         {
             "spec_id": "/pa/units/medieval/infantry/firemage/firemage_tool_weapon.json",
             "aim_bone": "bone_turret",
-            "muzzle_bone": "bone_turret",
-            "primary_weapon": true
-        }
+            "muzzle_bone": "muzzle_staff",
+            "primary_weapon": false
+        },
+        {
+        "spec_id": "/pa/units/medieval/infantry/firemage/firemage_tool_primary.json",
+        "aim_bone": "bone_turret",
+        "muzzle_bone": "muzzle_staff",
+        "primary_weapon": true
+      }
     ],
     "events": {
          "fired": {
-            "audio_cue": "/SE/Weapons/veh/tank_flame",
-            
-            "effect_scale": 0.1
+            "audio_cue": "/SE/Celestial/Ragnarock_lava_spout",
+            "effect_spec": "/pa/units/medieval/infantry/firemage/fire_proj.pfx muzzle_staff",
+            "effect_scale": 1
         },
         "died": {
             "audio_cue": "/SE/Death/Bot",

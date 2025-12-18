@@ -63,34 +63,32 @@
                     "channel": "sight",
                     "shape": "capsule",
                     "radius": 150
-                },
-                {
-                    "layer": "underwater",
-                    "channel": "sight",
-                    "shape": "capsule",
-                    "radius": 150
                 }
             ]
         }
     },
     "model": {
-        "filename": "/pa/units/medieval/infantry/mage/mage.papa",
+        "filename": "/pa/units/medieval/infantry/firemage/wizard.papa",
         "animations": {
-            "walk": "/pa/units/medieval/infantry/mage/mage_anim_walk.papa",
-            "idle": "/pa/units/medieval/infantry/mage/mage_anim_idle.papa",
-            "walk_stop": "/pa/units/medieval/infantry/mage/mage_anim_walkStop.papa",
-            "aim_up": "/pa/units/commanders/imperial_base/imperial_base_anim_aimUp.papa",
-            "aim_down": "/pa/units/commanders/imperial_base/imperial_base_anim_aimDown.papa"
+            "walk": "/pa/units/medieval/infantry/firemage/wizard_anim_walk.papa",
+            "idle": "/pa/units/medieval/infantry/firemage/wizard_anim_idle.papa",
+            "walk_stop": "/pa/units/medieval/infantry/firemage/wizard_anim_walkStop.papa",
+            "firing": "/pa/units/medieval/infantry/firemage/wizard_anim_walk.papa"
         },
-        "animtree": "/pa/anim/anim_trees/commander_imperial_anim_tree.json",
+        "animtree": "/pa/units/medieval/infantry/mage/lightningmage_anim_tree.json",
         "walk_speed": 7.0
     },
     "teleportable": {},
     "tools": [
         {
-            "spec_id": "/pa/units/medieval/infantry/mage/mage_tool_weapon.json",
+            "spec_id": "/pa/units/medieval/infantry/mage/seeking_blast_tool_weapon.json",
             "aim_bone": "bone_turret",
-            "muzzle_bone": "socket_rightMuzzle",
+            "projectiles_per_fire": 3,
+             "muzzle_bone": [
+        "muzzle_staff",
+        "muzzle_staff",
+        "muzzle_staff"
+      ],
             "primary_weapon": true
         }
     ],
@@ -112,10 +110,7 @@
         }
     ],
     "events": {
-        "fired": {
-            "audio_cue": "/SE/Weapons/air/titan_air_fire",
-            "effect_spec": "/pa/units/medieval/infantry/mage/lightning_muzzle.pfx socket_leftMuzzle"
-        },
+        
         "died": {
             "audio_cue": "/SE/Death/Bot",
             "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx",
