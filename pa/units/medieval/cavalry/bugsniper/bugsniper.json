@@ -47,19 +47,6 @@
                 0,
                 0
             ]
-        },
-        {
-            "type": "idle",
-            "filename": "/pa/units/medieval/structures/arcmage_tower/soul_blue.pfx",
-            "bone": "bone_root",
-            "offset": [
-                0,0,0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ]
         }
         
     ],

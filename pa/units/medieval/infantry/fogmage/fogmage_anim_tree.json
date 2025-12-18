@@ -21,7 +21,7 @@
                                     "type": "effect",
                                     "parameters": {
                                         "bone": "bone_root",
-                                        "spec": "/pa/units/medieval/structures/arcmage_tower/soul_blue.pfx"
+                                        "spec": "/pa/units/medieval/structures/fogmage_tower/soul_green.pfx"
                                     }
                                 }
                             ]

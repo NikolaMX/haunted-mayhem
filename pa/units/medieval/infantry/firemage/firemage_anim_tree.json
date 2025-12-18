@@ -21,7 +21,7 @@
                                     "type": "effect",
                                     "parameters": {
                                         "bone": "bone_root",
-                                        "spec": "/pa/units/medieval/structures/arcmage_tower/soul_blue.pfx"
+                                        "spec": "/pa/units/medieval/cavalry/fire_elemental/soul.pfx"
                                     }
                                 }
                             ]

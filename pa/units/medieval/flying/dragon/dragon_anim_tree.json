@@ -10,6 +10,39 @@
                 "entries": [
                     {
                         "type": "item",
+                        "name": "deploy",
+                        "node": {
+                            "type": "playback",
+                            "anim_name": "idle",
+                            "looping": false,
+                            "events": [
+                                {
+                                    "time": 0.01,
+                                    "type": "effect",
+                                    "parameters": {
+                                        "bone": "bone_root",
+                                         "spec": "/pa/units/medieval/cavalry/fire_elemental/soul.pfx"
+                                    }
+                                }
+                            ]
+                        },
+                        "transitions": [
+                            {
+                                "transition_forward": {
+                                    "func": "anim_complete",
+                                    "target": "idle",
+                                    "duration": 0.2
+                                },
+                                "transition_reverse": {
+                                    "func": "anim_complete",
+                                    "target": "idle",
+                                    "duration": 0.2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "type": "item",
                         "name": "idle",
                         "node": {
                             "type": "playback",
@@ -30,7 +63,7 @@
                                     "duration": 0.2
                                 }
                             },
-                             {
+                            {
                                 "transition_forward": {
                                     "func": "is_firing",
                                     "target": "firing",
@@ -153,4 +186,3 @@
         }
     ]
 }
-

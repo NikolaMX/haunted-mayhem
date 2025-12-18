@@ -6,15 +6,60 @@
                 "type": "bind_pose"
             },
             "living": {
-                "type": "walk",
-                "node_idle": {
-                    "type": "playback",
-                    "anim_name": "idle"
-                },
-                "node_walk": {
-                    "type": "playback",
-                    "anim_name": "walk"
-                }
+                "type": "sequence",
+                "entries": [
+                    {
+                        "type": "item",
+                        "name": "deploy",
+                        "node": {
+                            "type": "playback",
+                            "anim_name": "idle",
+                            "looping": false,
+                            "events": [
+                                {
+                                    "time": 0.01,
+                                    "type": "effect",
+                                    "parameters": {
+                                        "bone": "bone_root",
+                                        "spec": "/pa/units/medieval/structures/fogmage_tower/soul_green.pfx"
+                                    }
+                                }
+                            ]
+                        },
+                        "transitions": [
+                            {
+                                "transition_forward": {
+                                    "func": "anim_complete",
+                                    "target": "movement",
+                                    "duration": 0.2
+                                },
+                                "transition_reverse": {
+                                    "func": "anim_complete",
+                                    "target": "movement",
+                                    "duration": 0.2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "name": "movement",
+                        "node": {
+                            "type": "walk",
+                            "node_idle": {
+                                "type": "playback",
+                                "anim_name": "idle",
+                                "looping": true
+                            },
+                            "node_walk": {
+                                "type": "playback",
+                                "anim_name": "walk",
+                                "looping": true
+                            }
+                        },
+                        "reset": "playback_reset"
+                    }
+                ]
             },
             "dead": {
                 "type": "playback",

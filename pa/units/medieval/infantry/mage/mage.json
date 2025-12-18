@@ -93,24 +93,13 @@
         }
     ],
     "fx_offsets": [
-        {
-            "type": "idle",
-            "filename": "/pa/units/medieval/structures/arcmage_tower/soul_blue.pfx",
-            "bone": "bone_root",
-            "offset": [
-                0,
-                0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ]
-        }
+       
     ],
     "events": {
-        
+        "fired": {
+            "audio_cue": "/SE/Weapons/air/titan_air_fire",
+            "effect_spec": "/pa/units/medieval/infantry/mage/lightning_charge.pfx muzzle_staff"
+        },
         "died": {
             "audio_cue": "/SE/Death/Bot",
             "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx",

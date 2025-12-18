@@ -47,19 +47,6 @@
                 0,
                 0
             ]
-        },
-        {
-            "type": "idle",
-            "filename": "/pa/units/medieval/cavalry/fire_elemental/soul.pfx",
-            "bone": "bone_root",
-            "offset": [
-                0,0,0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ]
         }
     ],
   "audio": {
@@ -165,7 +152,7 @@
       "idle": "/pa/units/medieval/cavalry/bugsniper/bug_sniper_anim_idle.papa"
     },
     "walk_speed": 11,
-    "animtree": "/pa/units/medieval/cavalry/bugsniper/bipedal_mech_anim_tree.json"
+    "animtree": "/pa/units/medieval/cavalry/fire_elemental/bipedal_mech_anim_tree.json"
   },
   "navigation": {
         "type": "hover",

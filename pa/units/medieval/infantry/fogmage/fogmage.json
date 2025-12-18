@@ -100,19 +100,7 @@
         }
     ],
      "fx_offsets": [
-        {
-            "type": "idle",
-            "filename": "/pa/units/medieval/structures/fogmage_tower/soul_green.pfx",
-            "bone": "bone_root",
-            "offset": [
-                0,0,0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ]
-        }
+        
   ],
     "events": {
         "died": {
