@@ -87,7 +87,7 @@
             "aim_up": "/pa/units/commanders/imperial_base/imperial_base_anim_aimUp.papa",
             "aim_down": "/pa/units/commanders/imperial_base/imperial_base_anim_aimDown.papa"
         },
-        "animtree": "/pa/anim/anim_trees/commander_imperial_anim_tree.json",
+        "animtree": "/pa/units/medieval/infantry/fogmage/fogmage_anim_tree.json",
         "walk_speed": 7.0
     },
     "teleportable": {},

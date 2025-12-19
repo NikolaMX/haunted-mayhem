@@ -50,7 +50,7 @@
         "dodge_radius": 0,
         "dodge_multiplier": 0.0,
         "aggressive_distance": 75.0,
-        "aggressive_height": 0.0,
+        "aggressive_height": 100.0,
         "wobble_factor": 0.05,
         "wobble_speed": 0.1,
         "vertical_speed": 80,

@@ -70,12 +70,6 @@
                     "channel": "sight",
                     "shape": "capsule",
                     "radius": 150
-                },
-                {
-                    "layer": "underwater",
-                    "channel": "sight",
-                    "shape": "capsule",
-                    "radius": 150
                 }
             ]
         }
@@ -83,13 +77,13 @@
     "model": {
         "filename": "/pa/units/medieval/infantry/arcanist/arcanist.papa",
         "animations": {
-            "walk": "/pa/units/medieval/infantry/mage/mage_anim_walk.papa",
+            "walk": "/pa/units/medieval/infantry/arcanist/arcanist_anim_idle.papa",
             "idle": "/pa/units/medieval/infantry/arcanist/arcanist_anim_idle.papa",
-            "walk_stop": "/pa/units/medieval/infantry/mage/mage_anim_walkStop.papa",
+            "walk_stop": "/pa/units/medieval/infantry/arcanist/arcanist_anim_idle.papa",
             "aim_up": "/pa/units/commanders/imperial_base/imperial_base_anim_aimUp.papa",
             "aim_down": "/pa/units/commanders/imperial_base/imperial_base_anim_aimDown.papa"
         },
-        "animtree": "/pa/units/medieval/infantry/acolyte/acolyte_anim_tree.json",
+        "animtree": "/pa/units/medieval/infantry/arcanist/arcanist_anim_tree.json",
         "walk_speed": 7.0
     },
     "teleportable": {},
@@ -102,19 +96,6 @@
                 0,
                 -4,
                 2.5
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ]
-        },
-         {
-            "type": "idle",
-            "filename": "/pa/units/medieval/structures/arcmage_tower/soul_blue.pfx",
-            "bone": "bone_root",
-            "offset": [
-                0,0,0
             ],
             "orientation": [
                 0,
