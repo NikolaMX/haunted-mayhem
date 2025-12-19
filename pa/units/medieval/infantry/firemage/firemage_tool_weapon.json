@@ -8,9 +8,9 @@
     ],
     "arc_type": "ARC_High",
 
-    "ammo_capacity": 100,
-    "ammo_demand": 10,
-    "ammo_per_shot": 100,
+    "ammo_capacity": 150,
+    "ammo_demand": 15,
+    "ammo_per_shot": 150,
     "ammo_source": "energy",
     "charge_ammo_when_targeting": true,
     "start_fully_charged": false,

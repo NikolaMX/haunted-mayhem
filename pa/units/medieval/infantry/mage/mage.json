@@ -72,8 +72,7 @@
         "animations": {
             "walk": "/pa/units/medieval/infantry/firemage/wizard_anim_walk.papa",
             "idle": "/pa/units/medieval/infantry/firemage/wizard_anim_idle.papa",
-            "walk_stop": "/pa/units/medieval/infantry/firemage/wizard_anim_walkStop.papa",
-            "firing": "/pa/units/medieval/infantry/firemage/wizard_anim_walk.papa"
+            "walk_stop": "/pa/units/medieval/infantry/firemage/wizard_anim_walkStop.papa"
         },
         "animtree": "/pa/units/medieval/infantry/mage/lightningmage_anim_tree.json",
         "walk_speed": 7.0
@@ -93,7 +92,19 @@
         }
     ],
     "fx_offsets": [
-       
+       {
+            "type": "idle",
+            "filename": "/pa/units/medieval/infantry/mage/rings_charge.pfx",
+            "bone": "muzzle_staff",
+            "offset": [
+                0, 0, 0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        }
     ],
     "events": {
         "fired": {

@@ -1,8 +1,8 @@
 {
-  "ammo_capacity": 25,
-  "ammo_demand": 100,
+  "ammo_capacity": 5,
+  "ammo_demand": 20,
   "ammo_id": "/pa/units/medieval/cavalry/fire_elemental/fire_elemental_ammo.json",
-  "ammo_per_shot": 25,
+  "ammo_per_shot": 5,
   "ammo_source": "energy",
   "auto_attack": true,
   "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
