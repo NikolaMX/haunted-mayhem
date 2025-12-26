@@ -57,12 +57,6 @@
                     "channel": "sight",
                     "shape": "capsule",
                     "radius": 15
-                },
-                {
-                    "layer": "underwater",
-                    "channel": "sight",
-                    "shape": "capsule",
-                    "radius": 15
                 }
             ]
         }

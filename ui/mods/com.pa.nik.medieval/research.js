@@ -135,6 +135,7 @@ model.unitsToLock = [
                     "/pa/units/medieval/cavalry/bugsniper/bugsniper.json",
                     "/pa/units/medieval/infantry/arcanist/arcanist.json",
                     "/pa/units/medieval/structures/seeking_blast/seeking_blast.json",
+                    "/pa/units/medieval/structures/attack_tower/attack_tower.json",
             //Lightning Research            
                             
                             "/pa/units/medieval/research/imperia/lightning/lightning_t2.json",
@@ -572,6 +573,7 @@ model.unlockPairs = [
 //Lightning
 ["/pa/units/medieval/research/imperia/lightning/lightning_t1.json",
     ["/pa/units/medieval/structures/arcmage_tower/arcmage_tower.json",
+        "/pa/units/medieval/structures/attack_tower/attack_tower.json",
          "/pa/units/medieval/research/imperia/lightning/lightning_t2.json"
                 ],
     ["/pa/units/medieval/research/imperia/lightning/lightning_t1.json"],

@@ -99,12 +99,7 @@
                     "shape": "capsule",
                     "radius": 150
                 },
-                {
-                    "layer": "underwater",
-                    "channel": "sight",
-                    "shape": "capsule",
-                    "radius": 150
-                },
+              
                 {
                     "layer": "celestial",
                     "channel": "sight",

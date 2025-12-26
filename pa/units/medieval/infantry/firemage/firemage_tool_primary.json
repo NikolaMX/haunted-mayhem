@@ -1,7 +1,7 @@
 {
     "base_spec": "/pa/tools/base_bot_weapon/base_bot_weapon.json",
     "ammo_id": "/pa/units/medieval/infantry/firemage/firemage_ammo_primary.json",
-    "rate_of_fire": 1.5,
+    "rate_of_fire": 0.5,
     "max_range": 100,
     "yaw_rate": 360,
     "pitch_rate": 360,

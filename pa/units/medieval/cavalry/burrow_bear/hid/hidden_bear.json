@@ -82,12 +82,6 @@
           "channel": "sight",
           "shape": "sphere",
           "radius": 50
-        },
-        {
-          "layer": "underwater",
-          "channel": "sight",
-          "shape": "sphere",
-          "radius": 50
         }
       ]
     }
