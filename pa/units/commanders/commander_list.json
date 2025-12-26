@@ -3,11 +3,11 @@
     
         
        
-        "/pa/units/commanders/raptor_beast_king/raptor_beast_king.json",
-        "/pa/units/commanders/imperial_jt100010117/imperial_jt100010117.json",
-
         
-
+        "/pa/units/commanders/imperial_jt100010117/imperial_jt100010117.json",
+        "/pa/units/commanders/imperial_aceal/imperial_aceal.json",
+        
+        "/pa/units/commanders/raptor_beast_king/raptor_beast_king.json",
         "/pa/units/commanders/quad_pumpkin/quad_pumpkin.json",
         "/pa/units/commanders/quad_commandonut/quad_commandonut.json",
 

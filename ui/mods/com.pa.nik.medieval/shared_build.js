@@ -138,7 +138,7 @@ var newBuild = {
     
     "/pa/units/medieval/structures/fogmage_tower/fogmage_tower.json": ["i_build", 0, { row: 0, column: 3 }],
 
-    
+    "/pa/units/medieval/structures/firemage_tower/firemage_tower.json": ["i_build", 0, { row: 0, column: 1 }],
 
 
 
@@ -165,7 +165,7 @@ var newBuild = {
     "/pa/units/medieval/structures/mage_tower/mage_tower.json": ["v_build", 0, { row: 2, column: 0 }],
 
 
-    "/pa/units/medieval/structures/firemage_tower/firemage_tower.json": ["v_build", 0, { row: 0, column: 3 }],
+    
     "/pa/units/medieval/structures/serpent_shrine/serpent_shrine.json": ["v_build", 0, { row: 1, column: 2 }],
     "/pa/units/medieval/structures/blood_shrine/blood_shrine.json": ["v_build", 0, { row: 1, column: 3 }],
 
@@ -292,6 +292,7 @@ var newBuild = {
     //Imperia
 "/pa/units/medieval/upgrades/imperia/infantry/dual_sword.json": ["i_upgrades", 0, { row: 2, column: 0 }],
 "/pa/units/medieval/upgrades/imperia/infantry/champion.json": ["i_upgrades", 0, { row: 2, column: 1 }],
+"/pa/units/medieval/upgrades/imperia/cavalry/heavy_cav.json": ["i_upgrades", 0, { row: 2, column: 2 }],
 
     //Vesperin
 "/pa/units/medieval/upgrades/vesperin/spiders/nesting.json": ["v_upgrades", 0, { row: 2, column: 0 }],
@@ -321,11 +322,16 @@ var newBuild = {
                     "/pa/units/medieval/research/imperia/fog/fog_t3.json": ["i_research", 0, { row: 0, column: 4 }],
 
 
+                    "/pa/units/medieval/research/imperia/fire/fire_t1.json": ["i_research", 0, { row: 2, column: 5 }],
+                    "/pa/units/medieval/research/imperia/fire/fire_t2.json": ["i_research", 0, { row: 1, column: 5 }],
+                    "/pa/units/medieval/research/imperia/fire/fire_t3.json": ["i_research", 0, { row: 0, column: 5 }],
+
+
                     "/pa/units/medieval/research/imperia/merc/merc_t1.json": ["i_research", 0, { row: 2, column: 2 }],
                     "/pa/units/medieval/research/imperia/merc/merc_t2.json": ["i_research", 0, { row: 1, column: 2 }],
                     "/pa/units/medieval/research/imperia/merc/merc_t3.json": ["i_research", 0, { row: 0, column: 2 }],
 
-                    "/pa/units/medieval/research/imperia/merc/merc_t4.json": ["i_research", 0, { row: 0, column: 5 }]
+                    "/pa/units/medieval/research/imperia/merc/merc_t4.json": ["i_research", 0, { row: 0, column: 6 }]
 
 
 

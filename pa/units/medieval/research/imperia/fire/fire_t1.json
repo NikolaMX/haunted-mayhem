@@ -2,10 +2,10 @@
 
   {
     "base_spec":"/pa/units/land/base_vehicle/base_vehicle.json",
-    "display_name":"!LOC:Cyclopse T4 unlock",
-    "description":"!LOC:Beast. The largest, most expensive and most armoured unit of the Imperia. Devastating damage against all ground units.",
+    "display_name":"!LOC:Firemage T1 unlock",
+    "description":"!LOC:Long-range Mage that can channel a massive fireball. Increased damage against flying and spiders",
     "si_name": "empty",
-    "build_metal_cost": 1500,
+    "build_metal_cost": 500,
     "add_to_spatial_db": false,
     "model": {
       "filename": "/pa/units/medieval/misc/stun/empty_model.papa"

@@ -3,6 +3,7 @@
 
 "/pa/units/commanders/avatar/avatar.json",
     "/pa/units/commanders/imperial_jt100010117/imperial_jt100010117.json",
+     "/pa/units/commanders/imperial_aceal/imperial_aceal.json",
     "/pa/units/commanders/quad_commandonut/quad_commandonut.json",
     "/pa/units/commanders/quad_pumpkin/quad_pumpkin.json",
     "/pa/units/commanders/raptor_beast/raptor_beast.json",
@@ -108,6 +109,7 @@
 
     "/pa/units/medieval/cavalry/light_cav/light_cav.json",
     "/pa/units/medieval/cavalry/heavy_cav/heavy_cav.json",
+    "/pa/units/medieval/cavalry/heavy_cav/heavy_cav_upg.json",
     "/pa/units/medieval/cavalry/recurve_cav/recurve_cav.json",
 
     
@@ -270,13 +272,19 @@
                     "/pa/units/medieval/research/imperia/fog/fog_t3.json",
 
 
+                    "/pa/units/medieval/research/imperia/fire/fire_t1.json",
+                    "/pa/units/medieval/research/imperia/fire/fire_t2.json",
+                    "/pa/units/medieval/research/imperia/fire/fire_t3.json",
+
+
                     "/pa/units/medieval/research/imperia/merc/merc_t1.json",
                     "/pa/units/medieval/research/imperia/merc/merc_t2.json",
                     "/pa/units/medieval/research/imperia/merc/merc_t3.json",
                     "/pa/units/medieval/research/imperia/merc/merc_t4.json",
 
 "/pa/units/medieval/upgrades/imperia/infantry/dual_sword.json",
-"/pa/units/medieval/upgrades/imperia/infantry/champion.json"
+"/pa/units/medieval/upgrades/imperia/infantry/champion.json",
+"/pa/units/medieval/upgrades/imperia/cavalry/heavy_cav.json"
 
   ]
 }

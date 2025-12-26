@@ -1,0 +1,102 @@
+{
+    "base_spec": "/pa/units/commanders/raptor_beast_king/raptor_beast_king.json",
+    "display_name": "AceAl Commander",
+    "description": "Imperial AceAl Commander",
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ],
+            "head": [
+                0,
+                0,
+                13.2
+            ]
+        }
+    },
+ 
+    "model": {
+        "filename": "/pa/units/commanders/imperial_aceal/imperial_aceal.papa",
+        "animations": {
+            "walk": "/pa/units/commanders/imperial_aceal/imperial_base_anim_walk.papa",
+            "idle": "/pa/units/commanders/imperial_aceal/imperial_base_anim_idle.papa",
+            "walk_stop": "/pa/units/commanders/imperial_aceal/imperial_base_anim_walkStop.papa",
+            "aim_up": "/pa/units/commanders/imperial_aceal/imperial_base_anim_aimUp.papa",
+            "aim_down": "/pa/units/commanders/imperial_aceal/imperial_base_anim_aimDown.papa",
+            "firing": "/pa/units/commanders/imperial_aceal/imperial_base_anim_slash.papa"
+        },
+        "animtree": "/pa/units/commanders/imperial_aceal/commander_imperial_anim_tree.json",
+        "walk_speed": 6.0
+    },
+    "headlights": [
+        {
+            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+            "offset": [
+                0.0,
+                -2.3,
+                1.9
+            ],
+            "orientation": [
+                0.0,
+                45.0,
+                0.0
+            ],
+            "near_width": 5.0,
+            "near_height": 5.0,
+            "near_distance": 3.0,
+            "far_distance": 30.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 6.0,
+            "bone": "bone_spine",
+            "shadow_resolution": 128
+        }
+    ],
+    "lamps": [
+        {
+            "offset": [
+                0.0,
+                -1.9,
+                2.8
+            ],
+            "radius": 2.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 5.0,
+            "bone": "bone_spine"
+        },
+        {
+            "offset": [
+                0.07,
+                -3.85,
+                0.2
+            ],
+            "radius": 4.0,
+            "color": [
+                0.4,
+                1.0,
+                0.01
+            ],
+            "intensity": 2.0,
+            "bone": "bone_leftElbow"
+        }
+    ],
+    
+    "catalog_object_name": "TankAeson",
+    "kickstarter_backer": "416365416c",
+    "client": {
+        "ui": {
+            "image": "/ui/main/shared/img/commanders/img_imperial_aceal.png",
+            "thumb_image": "/ui/main/shared/img/commanders/thumbs/img_imperial_aceal_thumb.png",
+            "profile_image": "/ui/main/shared/img/commanders/profiles/profile_imperial_aceal.png"
+        }
+    }
+}

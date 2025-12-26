@@ -149,6 +149,17 @@ model.unitsToLock = [
                             "/pa/units/medieval/research/imperia/fog/fog_t2.json",
                             "/pa/units/medieval/research/imperia/fog/fog_t3.json",
 
+ //Imperia Fire Mages
+                    "/pa/units/medieval/structures/firemage_tower/firemage_tower.json",
+                    "/pa/units/medieval/cavalry/fire_elemental/fire_elemental.json",
+                    "/pa/units/medieval/flying/dragon/dragon.json",
+             //Fire Research            
+                            
+                            "/pa/units/medieval/research/imperia/fire/fire_t2.json",
+                            "/pa/units/medieval/research/imperia/fire/fire_t3.json",
+
+
+
     //Imperia Mercenaries
                     
                     "/pa/units/medieval/infantry/champion/champion.json",
@@ -174,6 +185,7 @@ model.unitsToLock = [
     //Imperia Cav
                     "/pa/units/medieval/cavalry/light_cav/light_cav.json",
                     "/pa/units/medieval/cavalry/heavy_cav/heavy_cav.json",
+                    "/pa/units/medieval/cavalry/heavy_cav/heavy_cav_upg.json",
                     "/pa/units/medieval/cavalry/recurve_cav/recurve_cav.json",
             //Cav Research
                             
@@ -507,7 +519,7 @@ model.unlockPairs = [
     ["/pa/units/medieval/research/imperia/merc/merc_t4.json"],
     false],  
 
-//Wind Mage
+    //Wind Mage
 
 //Fogmage
 ["/pa/units/medieval/research/imperia/fog/fog_t1.json",
@@ -528,9 +540,34 @@ model.unlockPairs = [
     ["/pa/units/medieval/flying/eagle/eagle.json"
                 ],
     ["/pa/units/medieval/research/imperia/fog/fog_t3.json"],
-    false],  
+    false],
 
-//Lightning Mage
+
+    //Fire Mage
+
+//Firemage
+["/pa/units/medieval/research/imperia/fire/fire_t1.json",
+    ["/pa/units/medieval/structures/firemage_tower/firemage_tower.json",
+         "/pa/units/medieval/research/imperia/fire/fire_t2.json"
+                ],
+    ["/pa/units/medieval/research/imperia/fire/fire_t1.json"],
+    false],  
+//Fire Elemental
+["/pa/units/medieval/research/imperia/fire/fire_t2.json",
+    ["/pa/units/medieval/cavalry/fire_elemental/fire_elemental.json",
+         "/pa/units/medieval/research/imperia/fire/fire_t3.json"
+                ],
+    ["/pa/units/medieval/research/imperia/fire/fire_t2.json"],
+    false],
+//Dragon
+["/pa/units/medieval/research/imperia/fire/fire_t3.json",
+    ["/pa/units/medieval/flying/dragon/dragon.json"
+                ],
+    ["/pa/units/medieval/research/imperia/fire/fire_t3.json"],
+    false],  
+  
+
+    //Lightning Mage
 
 //Lightning
 ["/pa/units/medieval/research/imperia/lightning/lightning_t1.json",
@@ -566,7 +603,6 @@ model.unlockPairs = [
                 ],
     ["/pa/units/medieval/infantry/sword_light/sword_light.json", "/pa/units/medieval/upgrades/imperia/infantry/dual_sword.json"],
     true],
-
          //Zweihander -> Champion Upgrade
     ["/pa/units/medieval/upgrades/imperia/infantry/champion.json",
     ["/pa/units/medieval/infantry/champion/champion.json"   
@@ -574,6 +610,14 @@ model.unlockPairs = [
     ["/pa/units/medieval/infantry/zweihander/zweihander.json", "/pa/units/medieval/upgrades/imperia/infantry/champion.json"],
     true],
 
+    
+//Cavalry
+     //Cavalry Charge
+    ["/pa/units/medieval/upgrades/imperia/cavalry/heavy_cav.json",
+    ["/pa/units/medieval/cavalry/heavy_cav/heavy_cav_upg.json"
+                ],
+    ["/pa/units/medieval/cavalry/heavy_cav/heavy_cav.json", "/pa/units/medieval/upgrades/imperia/cavalry/heavy_cav.json"],
+    true],
 
 //--------------------------------VESPERIN--------------------------------
 //--------------------------------VESPERIN--------------------------------

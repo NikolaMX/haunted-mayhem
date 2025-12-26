@@ -29,6 +29,7 @@
   },
   "max_health": 12500,
   "build_metal_cost": 25000,
+  "attack_range_frac": 0.5,
   "tools": [
     {
       "spec_id": "/pa/units/commanders/commander_build_arm.json",
@@ -41,7 +42,13 @@
       "primary_weapon": true
     }
 ],
-
+"events": {
+        
+        "teleported": {
+            "audio_cue": "/SE/Death/Veh",
+            "effect_spec": "/pa/effects/specs/default_explosion.pfx"
+        }
+    },
 
 
 

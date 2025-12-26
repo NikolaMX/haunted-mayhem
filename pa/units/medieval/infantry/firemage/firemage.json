@@ -23,7 +23,7 @@
         }
     },
     "unit_types": [
-        "UNITTYPE_Custom10",
+        "UNITTYPE_Custom8",
         "UNITTYPE_Tank",
         
         "UNITTYPE_Tactical",

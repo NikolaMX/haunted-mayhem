@@ -7,7 +7,7 @@
     "build_metal_cost": 3000,
     "armor_type": "AT_Custom6",
     "unit_types": [
-        "UNITTYPE_Custom10",
+        "UNITTYPE_Custom8",
         
 
         "UNITTYPE_Tactical",

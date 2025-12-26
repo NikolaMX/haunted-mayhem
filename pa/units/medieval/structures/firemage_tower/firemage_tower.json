@@ -18,7 +18,7 @@
         "UNITTYPE_Structure",
         "UNITTYPE_Advanced",
         "UNITTYPE_FabAdvBuild",
-        "UNITTYPE_Custom10"
+        "UNITTYPE_Custom8"
     ],
     "command_caps": [
     "ORDER_Move",
@@ -37,7 +37,7 @@
    "feature_requirements": [
     "control_point"
   ],
-    "buildable_types": "Custom10 & FactoryBuild & Advanced & Artillery & Tactical",
+    "buildable_types": "Custom8 & FactoryBuild & Advanced & Artillery & Tactical",
     "rolloff_dirs": [
         [
             0,
