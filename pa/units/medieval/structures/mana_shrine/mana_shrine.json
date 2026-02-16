@@ -10,7 +10,7 @@
      "max_health": 1000,
     "build_metal_cost": 400,
     "feature_requirements": [
-        "control_point"
+        "energy_spot"
     ],
     "replaceable_units": [
 

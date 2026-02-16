@@ -22,12 +22,12 @@
   "fx_offsets": [
         {
             "type": "idle",
-            "filename": "/pa/effects/ptou/body.pfx",
+            "filename": "/pa/units/medieval/cavalry/bugsniper/body.pfx",
             "bone": "bone_turret",
             "offset": [
                 0,
-                0.5,
-                -8.5
+                2,
+                -7
             ],
             "orientation": [
                 0,
@@ -37,7 +37,7 @@
         },
         {
             "type": "idle",
-            "filename": "/pa/effects/ptou/arms.pfx",
+            "filename": "/pa/units/medieval/cavalry/bugsniper/arms.pfx",
             "bone": "bone_pitch",
             "offset": [
                 0,-1.2,-9.9

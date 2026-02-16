@@ -153,7 +153,7 @@ var paeiouIcons = [
     "jumping_spider_ammo_jump",
     
 
-    "unit_cannon_wreckage", //custom mana point
+    "energy_spot_01", //custom mana point
 
 
     
