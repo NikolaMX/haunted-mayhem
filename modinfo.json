@@ -4,11 +4,11 @@
 	"display_name": "Medieval Server Local",
 	"description": "Adds 3 Medieval and Fantasy themed factions, each with unique units and playstyle",
 	"author": "NikolaMX",
-	"date": "2025-10-03",
-	"build": "124610",
-	"version": "0.1",
+	"date": "2026-03-16",
+	"build": "124632",
+	"version": "1.0",
 	"signature": "not yet implemented",
-	"forum": "",
+	"forum": "https://steamcommunity.com/app/386070/discussions/0/805719856669440922/",
 	"icon": "https://i.imgur.com/jtTEm7Y.gif",
 	"priority": 99,
 	"titansOnly": true,
@@ -22,7 +22,6 @@
 		"expansion"
 	],
 	"scenes": {
-		
 		"icon_atlas": [
 			"coui://ui/mods/com.pa.nik.medieval/icon_atlas.js"
 		],
@@ -36,15 +35,18 @@
 			"coui://ui/mods/com.pa.nik.medieval/live_game/players.js"
 		],
 		"live_game": [
-            "coui://ui/mods/com.pa.nik.medieval/mechanics.js",
+			"coui://ui/mods/com.pa.nik.medieval/mechanics.js",
 			"coui://ui/mods/com.pa.nik.medieval/research.js",
 			"coui://ui/mods/com.pa.nik.medieval/research_live_game.js"
-        ],
+		],
 		"new_game": [
-      "coui://ui/mods/restricted-commanders/auth-code.js",
-      "coui://ui/mods/restricted-commanders/commander-filter.js",
-      "coui://ui/mods/restricted-commanders/code-input-ui.js",
-      "coui://ui/mods/restricted-commanders/code-input.css"
-    ]
+			"coui://ui/mods/restricted-commanders/auth-code.js",
+			"coui://ui/mods/restricted-commanders/commander-filter.js",
+			"coui://ui/mods/restricted-commanders/code-input-ui.js",
+			"coui://ui/mods/restricted-commanders/code-input.css"
+		],
+		"dependencies": [
+			"medieval_mode_client_dev"
+		]
 	}
 }
