@@ -44,9 +44,12 @@
 			"coui://ui/mods/restricted-commanders/commander-filter.js",
 			"coui://ui/mods/restricted-commanders/code-input-ui.js",
 			"coui://ui/mods/restricted-commanders/code-input.css"
-		],
-		"dependencies": [
-			"medieval_mode_client_dev"
 		]
-	}
+	},
+	"dependencies": [
+		"medieval_mode_client"
+	],
+	"companions": [
+		"medieval_mode_client"
+	]
 }
