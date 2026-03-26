@@ -201,6 +201,8 @@ var newBuild = {
         "/pa/units/medieval/cavalry/spider/spider.json": ["c_s_factory", 0, { row: 2, column: 1 }],
         "/pa/units/medieval/cavalry/big_spider/big_spider.json": ["c_s_factory", 0, { row: 0, column: 1 }],
         "/pa/units/medieval/cavalry/jumping_spider/jumping_spider.json": ["c_s_factory", 0, { row: 1, column: 1 }],
+
+        "/pa/units/medieval/cavalry/arch_spider/arch_spider.json": ["v_build", 0, { row: 0, column: 0 }],
         
     
         //Bugs

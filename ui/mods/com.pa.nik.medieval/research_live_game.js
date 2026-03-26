@@ -34,7 +34,7 @@ factorySpecs = [
 
 
 //Vesperin
-"/pa/units/medieval/structures/mage_tower/mage_tower.json",
+    "/pa/units/medieval/structures/mage_tower/mage_tower.json",
 
 
     "/pa/units/medieval/structures/lair/lair.json",

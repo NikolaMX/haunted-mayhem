@@ -71,7 +71,7 @@
     ],
     "fx_offsets": [
         {
-            "filename": "/pa/units/medieval/structures/attack_tower/lightning/edison_aux_bulb.pfx",
+            "filename": "/pa/units/medieval/structures/attack_tower/edison_aux_bulb.pfx",
             "bone": "bone_root",
             "type": "idle"
         }

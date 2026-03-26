@@ -52,7 +52,7 @@
     },
     {
       "animations": {
-        "idle": "/pa/units/medieval/structures/attack_tower_anim_idle.papa"
+        "idle": "/pa/units/medieval/structures/attack_tower/attack_tower_anim_idle.papa"
       },
       "layer": "WL_WaterSurface",
       "filename": "/pa/units/medieval/structures/attack_tower/attack_tower.papa",

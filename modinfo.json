@@ -1,10 +1,10 @@
 {
 	"context": "server",
 	"identifier": "medieval_mode_dev",
-	"display_name": "Medieval Server",
+	"display_name": "Haunted Mayhem / Medieval Mode",
 	"description": "Adds 3 Medieval and Fantasy themed factions, each with unique units and playstyle",
 	"author": "NikolaMX",
-	"date": "2026-03-23",
+	"date": "2026-03-26",
 	"build": "124632",
 	"version": "1.0",
 	"signature": "not yet implemented",

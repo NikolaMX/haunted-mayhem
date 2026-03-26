@@ -17,6 +17,6 @@
     ],
     "scale_range": 0,
     "count": 1,
-    "material_spec": "/pa/effects/decals/splat_red.json",
+    "material_spec": "/pa/effects/decal/splat_red.json",
     "lifetime": 0
 }

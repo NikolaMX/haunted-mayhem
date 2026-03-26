@@ -60,7 +60,7 @@
   "model": {
     "filename": "/pa/units/medieval/infantry/dual_sword/assault_bot.papa",
     "animations": {
-      "death01": "/pa/units/medieval/infantry/sword_dox/assault_bot_anim_death01.papa",
+      "death01": "/pa/units/land/assault_bot/assault_bot_anim_death01.papa",
       "walk": "/pa/units/medieval/infantry/dual_sword/assault_bot_anim_run.papa",
       "idle": "/pa/units/medieval/infantry/dual_sword/assault_bot_anim_idle.papa",
       "firing": "/pa/units/medieval/infantry/dual_sword/dual_sword_anim_stab.papa"

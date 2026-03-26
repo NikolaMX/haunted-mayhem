@@ -45,6 +45,8 @@ var paeiouIcons = [
     "scorpion",
     "crab",
     "roach",
+
+    "arch_spider",
     
     "hound",
 

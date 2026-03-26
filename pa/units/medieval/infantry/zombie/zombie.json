@@ -2,7 +2,7 @@
   "si_name":"zombie",
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
   "display_name": "Zombie",
-  "description": "!LOC:Undead. Extremly weak.",
+  "description": "!LOC:Undead. Extremely weak.",
   "armor_type": "AT_Custom9",
   "max_health": 50,
   "build_metal_cost": 10,

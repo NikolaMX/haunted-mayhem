@@ -14,7 +14,7 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/cannon_uber",
-      "effect_spec": "/pa/units/medieval/cavalry/goliath/pa/effects/melee_sparks.pfx"
+      "effect_spec": "/pa/units/medieval/cavalry/goliath/melee_sparks.pfx"
     }
   },
   "flight_type": "Seeking",

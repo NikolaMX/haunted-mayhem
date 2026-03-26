@@ -63,7 +63,7 @@
            
         },
         "animtree": "/pa/units/medieval/structures/witch_hut/witch_hut_anim_tree.json",
-        "walk_speed":  6
+        "walk_speed":  4
     },
     "tools": [
         {

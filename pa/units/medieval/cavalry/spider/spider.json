@@ -69,7 +69,7 @@
     "model": {
         "filename": "/pa/units/medieval/cavalry/spider/bot_bomb.papa",
         "animations": {
-            "death01": "/pa/units/medieval/cavalry/spider/spider_anim_deatd.papa",
+            "death01": "/pa/units/medieval/cavalry/spider/spider_anim_dead.papa",
             "idle": "/pa/units/medieval/cavalry/spider/spider_anim_idle.papa",
             "walk": "/pa/units/medieval/cavalry/spider/spider_anim_run.papa",
             "firing": "/pa/units/medieval/cavalry/spider/spider_anim_attack.papa"

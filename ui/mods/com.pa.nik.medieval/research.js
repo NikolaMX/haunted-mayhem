@@ -46,6 +46,7 @@ model.unitsToLock = [
                     "/pa/units/medieval/cavalry/big_spider/big_spider_upg.json",
                     "/pa/units/medieval/cavalry/jumping_spider/jumping_spider_upg.json",
                     "/pa/units/medieval/cavalry/spider/spider_upg.json",
+                    "/pa/units/medieval/cavalry/arch_spider/arch_spider.json",  
                     
     //Vesperin Bugs 
                     "/pa/units/medieval/cavalry/roach/roach.json",
@@ -312,7 +313,8 @@ model.unlockPairs = [
     false],
      //Cabal Spiders T3
     ["/pa/units/medieval/research/vesperin/spiders/spiders_t3.json",
-    [   "/pa/units/medieval/cavalry/big_spider/big_spider.json",   
+    [   "/pa/units/medieval/cavalry/big_spider/big_spider.json",
+        "/pa/units/medieval/cavalry/arch_spider/arch_spider.json"   
                 ],
     ["/pa/units/medieval/research/vesperin/spiders/spiders_t3.json"],
     false],
@@ -747,7 +749,7 @@ model.unlockPairs = [
 
     //Web Mother Egglayer
      ["/pa/units/medieval/upgrades/vesperin/spiders/nesting.json",
-    ["/pa/units/medieval/cavalry/big_spider/big_spider_upg.json"  
+    ["/pa/units/medieval/cavalry/big_spider/big_spider_upg.json" 
                 ],
     ["/pa/units/medieval/cavalry/big_spider/big_spider.json", "/pa/units/medieval/upgrades/vesperin/spiders/nesting.json"],
     true],
