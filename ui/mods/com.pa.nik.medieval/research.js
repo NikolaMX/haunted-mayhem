@@ -835,13 +835,6 @@ researchLoop = function(){
                        
                         if(result[0].built_frac == undefined){
                       
-                            // *** NEW: Send message to research_live_game to handle cancellation for this specific research unit ***
-                            api.Panel.message("research_live_game", 'unitCompleted', {
-                                unit_spec: pair[0],
-                                factory_id: result[0].id // Assuming the first unit's ID is sufficient to identify the factory
-                            });
-                            // *** END NEW ***
-
                         //if the unlock should actually be a replace
                         if(pair[3] !== true){
                         pair[1].forEach(function(unit){
@@ -872,12 +865,14 @@ researchLoop = function(){
                                 }
                                 else{//lock the pair 2 as it has no match
                                    
-                                    //replace that sets the new unit to undefined as a way to cancel its build order
-                                    api.Panel.message("build_bar", 'replaceUnit',[[pair[2][i]],[undefined], pair[3]])
                                     api.Panel.message("build_bar", 'lockUnit',pair[2][i])
                                     api.Panel.message(api.panels["LiveGame_FloatZone"].id, 'unlockResearch', pair[0]);
                                 }
                             }
+                        }
+
+                        if(model.clearConsumedTriggerQueue){
+                            model.clearConsumedTriggerQueue(pair[0]);
                         }
 
 

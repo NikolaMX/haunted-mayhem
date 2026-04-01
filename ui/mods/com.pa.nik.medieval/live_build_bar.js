@@ -44,8 +44,9 @@ model.unlockUnit = function(unitName){//units are unlocked by removing the _disa
 //takes in array of units to replace and what to replace them with
 //if replaceQueue is true it replaces the old unit in the queue, if it is false it removes it, if undefined nothing
 model.replaceUnit = function(originalNames, replacementNames, replaceQueue){
+    var hasReplacement = replacementNames[0] !== null && replacementNames[0] !== undefined;
     console.log(replacementNames[0])
-    if(replacementNames[0] !== null){
+    if(hasReplacement){
     var tabs = model.buildSet().tabs()
     for(var i = 0;i<tabs.length;i++){
         var tab = tabs[i].items();
@@ -73,10 +74,10 @@ model.replaceUnit = function(originalNames, replacementNames, replaceQueue){
     }
 }
     for(var i = 0; i< originalNames.length;i++){
-        if(replacementNames[0] !== null){
+        if(hasReplacement){
         api.Panel.message(api.Panel.parentId,'replaceHotkey',[originalNames[i],replacementNames[i]]);}
         if(replaceQueue == true){api.Panel.message(api.Panel.parentId,'replaceQueue',[originalNames[i],replacementNames[i]]);}
-        if(replacementNames[0] !== null){
+        if(hasReplacement){
         model.setupReplaceCount([originalNames[i],replacementNames[i]])
         }
 

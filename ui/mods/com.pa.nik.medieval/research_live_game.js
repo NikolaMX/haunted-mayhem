@@ -6,6 +6,33 @@ model.oldUnits = []//units being replaced, this is checked before building anyth
 
 model.newUnits = []//replaces the id if an old unit is hotkeyed
 
+var consumedTriggerQueueRules = [
+    {
+        prefix: "/pa/units/medieval/research/cabal/",
+        producer_specs: ["/pa/units/medieval/structures/mage_tower/mage_tower_c.json"]
+    },
+    {
+        prefix: "/pa/units/medieval/upgrades/cabal/",
+        producer_specs: ["/pa/units/medieval/structures/mage_tower/mage_tower_c.json"]
+    },
+    {
+        prefix: "/pa/units/medieval/research/imperia/",
+        producer_specs: ["/pa/units/medieval/structures/observatory/observatory.json"]
+    },
+    {
+        prefix: "/pa/units/medieval/upgrades/imperia/",
+        producer_specs: ["/pa/units/medieval/structures/observatory/observatory.json"]
+    },
+    {
+        prefix: "/pa/units/medieval/research/vesperin/",
+        producer_specs: ["/pa/units/medieval/structures/mage_tower/mage_tower.json"]
+    },
+    {
+        prefix: "/pa/units/medieval/upgrades/vesperin/",
+        producer_specs: ["/pa/units/medieval/structures/mage_tower/mage_tower.json"]
+    }
+];
+
 //factory map will link each factory id to a buildqueue
 //in order to track correctly this will be done on orders issued rather than factory selection
 factorySpecs = [
@@ -48,6 +75,75 @@ factorySpecs = [
 
 model.factoryMap = {}
 
+model.captureSelection = function(){
+    if (!api.selection || !api.selection.has || !api.selection.get) {
+        return null;
+    }
+    if (!api.selection.has()) {
+        return null;
+    }
+    return api.selection.get();
+}
+
+model.restoreSelection = function(selectionSnapshot){
+    api.select.empty();
+    if (selectionSnapshot && api.selection && api.selection.set) {
+        api.selection.set(selectionSnapshot);
+    }
+}
+
+model.getConsumedTriggerProducerSpecs = function(unitSpec){
+    if (!unitSpec) {
+        return [];
+    }
+    for (var i = 0; i < consumedTriggerQueueRules.length; i++) {
+        if (unitSpec.indexOf(consumedTriggerQueueRules[i].prefix) === 0) {
+            return consumedTriggerQueueRules[i].producer_specs;
+        }
+    }
+    return [];
+}
+
+model.clearConsumedTriggerQueue = function(unitSpec){
+    var producerSpecs = model.getConsumedTriggerProducerSpecs(unitSpec);
+    if (producerSpecs.length === 0 || !model.allPlayerArmy) {
+        return;
+    }
+
+    var playerId = model.armyIndex();
+    if (typeof playerId === "undefined" && model.armyId) {
+        playerId = model.armyId();
+    }
+    if (typeof playerId === "undefined") {
+        return;
+    }
+
+    model.allPlayerArmy(playerId, producerSpecs).then(function(result){
+        var producerIds = [];
+        _.forEach(producerSpecs, function(spec){
+            if (result[spec] !== undefined) {
+                producerIds = producerIds.concat(result[spec]);
+            }
+        });
+        producerIds = _.uniq(producerIds);
+
+        if (producerIds.length === 0) {
+            return;
+        }
+
+        var originalSelection = model.captureSelection();
+        api.select.unitsById(producerIds);
+        api.unit.cancelBuild(unitSpec, 100, false);
+        model.restoreSelection(originalSelection);
+
+        _.forEach(producerIds, function(producerId){
+            if (model.factoryMap[producerId]) {
+                delete model.factoryMap[producerId][unitSpec];
+            }
+        });
+    });
+}
+
 model.mapFactoryBuildToIds = function(selectedFacIds, unitSpec, count, cancel, urgent){//if urgent we ignore otherwise we update the map
 
     for(var i = 0 ; i < selectedFacIds.length; i++){
@@ -73,19 +169,12 @@ model.mapFactoryBuildToIds = function(selectedFacIds, unitSpec, count, cancel, u
 }
 
 model.replaceUnitQueue = function(facsToReQueue,oldUnit, newUnit, maxAmount){//this should only run between selections
-    var selectedIdArray = [];
-    if(model.selection()){
-
-        selectedUnitArray = model.selection().spec_ids;
-        var unitKeys = _.keys(selectedUnitArray);
-        for(key in unitKeys){
-           
-            selectedIdArray = selectedIdArray.concat(selectedIdArray, selectedUnitArray[unitKeys[key]]);
-
-        }
-    }
+    var originalSelection = model.captureSelection();
     var facIds = [];
     _.forEach(facsToReQueue, function(fac){facIds.push(fac[0])})
+    if (facIds.length === 0) {
+        return;
+    }
     //select facs that are needed initally
     api.select.unitsById(facIds);
     api.unit.cancelBuild(oldUnit, 100, false);
@@ -102,11 +191,10 @@ model.replaceUnitQueue = function(facsToReQueue,oldUnit, newUnit, maxAmount){//t
             }
         }
        api.select.unitsById(facIds);
-       if(newUnit !== null){
+       if(newUnit !== null && newUnit !== undefined){
        api.unit.build(newUnit, 1, false);}
     }
-    api.select.empty();
-    api.select.unitsById(selectedIdArray);
+    model.restoreSelection(originalSelection);
 }
 
 
@@ -204,66 +292,11 @@ handlers.replaceQueue = function(unitPair){
     model.replaceUnitQueue(facsToQueue,oldUnit,newUnit,maxAmount);
 }
 
-// Handler for when a unit completes building.
-// This is where we'll cancel any remaining queues for a completed research unit.
 handlers.unitCompleted = function(payload) {
-    var completedUnitSpec = payload.unit_spec;
-
-    console.log("Research unit completed, attempting to clear its queue:", completedUnitSpec);
-
-    var factoriesWithUnitQueued = [];
-
-    // First, identify all factories that currently have this unit in their internal map
-    // We iterate through a copy of keys, as we might modify the map
-    var facKeys = _.keys(model.factoryMap);
-    _.forEach(facKeys, function(facIdStr) {
-        var facId = parseInt(facIdStr); // Ensure ID is integer
-        if (model.factoryMap[facId] && model.factoryMap[facId][completedUnitSpec] > 0) {
-            factoriesWithUnitQueued.push(facId);
-        }
-    });
-
-    if (factoriesWithUnitQueued.length > 0) {
-        console.log("Found factories with completed research unit in queue:", factoriesWithUnitQueued);
-
-        // Save current selection to restore it later
-        var originalSelection = null;
-        if (api.selection.has()) {
-            originalSelection = api.selection.get();
-        }
-
-        // Select the factories that have the unit in queue
-        api.select.unitsById(factoriesWithUnitQueued);
-
-        // Cancel all instances of this research unit in the queue.
-        // Using '100' is a common way to cancel "all" queued items,
-        // and 'false' for urgent means it's a normal cancellation.
-        api.unit.cancelBuild(completedUnitSpec, 100, false);
-        console.log("Issued cancelBuild for", completedUnitSpec, "in factories:", factoriesWithUnitQueued);
-        
-        // Restore original selection
-        if (originalSelection) {
-            api.select.empty(); // Clear current selection before restoring
-            api.select.set(originalSelection);
-        } else {
-            api.select.empty(); // Deselect the factories if nothing was originally selected
-        }
-
-        // After issuing the cancel, update our internal model.factoryMap
-        // to reflect that these units are no longer considered queued.
-        _.forEach(factoriesWithUnitQueued, function(facId) {
-            if (model.factoryMap[facId]) {
-                delete model.factoryMap[facId][completedUnitSpec];
-                console.log("Updated model.factoryMap for factory", facId, "removing", completedUnitSpec);
-            }
-        });
-        
-        // It might be beneficial to explicitly trigger a UI refresh if the build bar doesn't update,
-        // though `api.unit.cancelBuild` usually handles this.
-        // api.Panel.message(api.Panel.parentId, 'refreshBuildBar'); // This is a hypothetical message, might not exist or be needed.
-    } else {
-        console.log("No factories found with", completedUnitSpec, "in queue.");
+    if (!payload || !payload.unit_spec) {
+        return;
     }
+    model.clearConsumedTriggerQueue(payload.unit_spec);
 };
 
 
