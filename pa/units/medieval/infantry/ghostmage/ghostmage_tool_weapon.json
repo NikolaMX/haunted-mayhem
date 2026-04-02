@@ -21,7 +21,7 @@
     "WL_Air",
     "WL_Underwater"
   ],
-"exclude_unit_types": "Custom8 | Custom9 | Custom10",
+"exclude_unit_types": "Custom8 | Custom9 | Custom10 | Commander",
     "physics": {
         "radius": 1,
         "gravity_scalar": 1,
