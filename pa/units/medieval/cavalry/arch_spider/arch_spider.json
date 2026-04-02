@@ -91,7 +91,7 @@
         },
         "died": {
             "audio_cue": "/SE/Death/Bot_bomb",
-            "effect_spec": "/pa/units/medieval/cavalry/spider/white_hit.pfx",
+            "effect_spec": "",
             "effect_scale": 5
         },
         "fired": {

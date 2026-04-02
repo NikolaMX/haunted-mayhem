@@ -40,8 +40,9 @@
             "effect_scale": 1.5
         },
         "died": {
-            "audio_cue": "/SE/Death/Veh",
-            "effect_scale": 1.5
+            "audio_cue": "/SE/Death/Bot_bomb",
+            "effect_spec": "",
+            "effect_scale": 1.0
         },
         "build_complete": {
             "audio_cue": "/SE/Build_Complete/veh",
@@ -123,7 +124,7 @@
     ],
   "death": {
     "decals": [
-      "/pa/effects/decal/splat_yellow_decal.json"
+      "/pa/effects/decal/splat_yellow_small_decal.json"
     ]
   }
 }
