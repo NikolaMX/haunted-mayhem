@@ -4,7 +4,7 @@
     "display_name": "Dragon",
     "description": "!LOC:Beast. Flying. Fast. Huge fire damage, incredibly strong against cavalry.",
     "max_health": 1500,
-    "build_metal_cost": 3000,
+    "build_metal_cost": 4500,
     "armor_type": "AT_Custom6",
     "unit_types": [
         "UNITTYPE_Custom8",

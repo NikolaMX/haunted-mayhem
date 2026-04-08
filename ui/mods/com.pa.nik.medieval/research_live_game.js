@@ -301,3 +301,77 @@ handlers.unitCompleted = function(payload) {
 
 
 var noSelect = []
+
+// ===== Research Map Panel Message Handlers =====
+
+/**
+ * Check which factions are available to player based on research buildings they have built
+ */
+model.getAvailableFactions = function() {
+    var factionResearchBuildings = {
+        cabal: "/pa/units/medieval/structures/mage_tower/mage_tower_c.json",
+        imperia: "/pa/units/medieval/structures/observatory/observatory.json",
+        vesperin: "/pa/units/medieval/structures/mage_tower/mage_tower.json"
+    };
+
+    var armyPromise = model.allPlayerArmy(model.armyIndex());
+
+    return armyPromise.then(function(result) {
+        var availableFactions = [];
+        var armyKeys = _.keys(result);
+
+        console.log('[Research Map] Army keys:', armyKeys);
+
+        _.forEach(factionResearchBuildings, function(buildingSpec, factionId) {
+            if (result[buildingSpec] && result[buildingSpec].length > 0) {
+                console.log('[Research Map] Found ' + factionId + ' building:', buildingSpec);
+                availableFactions.push(factionId);
+            }
+        });
+
+        console.log('[Research Map] Available factions detected:', availableFactions);
+
+        // In sandbox or if no buildings found, default to showing all factions
+        // This prevents the panel from being completely empty
+        if (availableFactions.length === 0) {
+            console.log('[Research Map] No faction buildings found, defaulting to all factions');
+            availableFactions = ['cabal', 'imperia', 'vesperin'];
+        }
+
+        return availableFactions;
+    });
+};
+
+/**
+ * Handle incoming messages from the research map floatzone panel
+ */
+handlers.requestResearchMapState = function(payload) {
+    console.log('[Research Map Handler] requestResearchMapState called');
+
+    // Get both researched specs and available factions
+    var researchPromise = model.getResearchedTriggers ? model.getResearchedTriggers() : Promise.resolve([]);
+    var factionsPromise = model.getAvailableFactions();
+
+    Promise.all([researchPromise, factionsPromise]).then(function(results) {
+        var researched = results[0];
+        var availableFactions = results[1];
+
+        console.log('[Research Map Handler] Researched specs count:', researched ? researched.length : 0);
+        console.log('[Research Map Handler] Researched specs:', researched);
+        console.log('[Research Map Handler] Available factions:', availableFactions);
+
+        var response = {
+            researched: researched,
+            availableFactions: availableFactions
+        };
+
+        if (api.panels && api.panels["LiveGame_FloatZone"]) {
+            console.log('[Research Map Handler] Sending response to LiveGame_FloatZone');
+            api.Panel.message(api.panels["LiveGame_FloatZone"].id, 'updateResearchMapState', response);
+        } else {
+            console.warn('[Research Map Handler] LiveGame_FloatZone panel not found');
+        }
+    }).catch(function(err) {
+        console.error('Error getting research state for map panel:', err);
+    });
+};

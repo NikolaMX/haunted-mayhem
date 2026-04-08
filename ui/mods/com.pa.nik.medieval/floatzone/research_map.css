@@ -1,0 +1,303 @@
+/* Research Map Panel Styling */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 12px;
+    color: #91a0ab;
+    background-color: transparent;
+    user-select: none;
+}
+
+.research-map-panel {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #13171c, #0d1014);
+    border: 2px solid #2b3138;
+    border-radius: 4px;
+    width: 736px;
+    height: 70vh;
+    max-width: 95vw;
+    max-height: calc(100vh - 60px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    background: linear-gradient(180deg, #0f151b, #0c1014);
+    border-bottom: 1px solid #2f3943;
+    flex-shrink: 0;
+    gap: 10px;
+}
+
+.drag-handle {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #5a6a78;
+    cursor: move;
+    border: 1px solid #3a4650;
+    border-radius: 3px;
+    background-color: #1a2028;
+    flex-shrink: 0;
+    transition: color 0.15s, border-color 0.15s;
+}
+
+.drag-handle:hover {
+    color: #ffffff;
+    border-color: #5a7a8a;
+    background-color: #253342;
+}
+
+.panel-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+    flex: 1;
+}
+
+.toggle-btn {
+    min-width: 60px;
+    padding: 6px 12px;
+    background-color: #1c252e;
+    border: 1px solid #4c6173;
+    border-radius: 3px;
+    color: #91a0ab;
+    font-weight: bold;
+    font-size: 11px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #253342;
+    border-color: #56707f;
+}
+
+.toggle-btn.active {
+    background-color: #2ad46f;
+    border-color: #2ad46f;
+    color: #000000;
+}
+
+.panel-content {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 12px;
+}
+
+/* Factions stacked vertically */
+.factions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.faction {
+    border: 2px solid;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.faction-header {
+    padding: 8px 14px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #ffffff;
+    background-color: #0c1014;
+}
+
+/* Branches laid out as columns in a row */
+.faction-body {
+    background-color: #101419;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    overflow-x: auto;
+}
+
+/* Each branch is a column */
+.branch {
+    flex: 1 1 0;
+    min-width: 80px;
+    border: 1px solid #2f3943;
+    border-radius: 3px;
+    background-color: #1a2026;
+    display: flex;
+    flex-direction: column;
+}
+
+.branch-header {
+    padding: 6px 8px;
+    background-color: #0f151b;
+    border-bottom: 1px solid #2f3943;
+    font-weight: bold;
+    font-size: 10px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    flex-shrink: 0;
+}
+
+/* Nodes stacked vertically within each branch column */
+.branch-nodes {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 6px;
+}
+
+.research-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #121417;
+    border: 2px solid #4b555e;
+    border-radius: 2px;
+    padding: 6px 4px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    position: relative;
+}
+
+.research-node:hover {
+    transform: scale(1.03);
+    z-index: 1;
+}
+
+.research-node.researched {
+    background-color: #142228;
+}
+
+.node-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 2px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(0.6) saturate(0);
+    transition: all 0.2s ease;
+}
+
+.research-node.researched .node-icon {
+    filter: brightness(1) saturate(1);
+}
+
+.node-tier {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    min-width: 22px;
+    height: 13px;
+    padding: 0 3px;
+    background-color: #3a4650;
+    color: #000000;
+    font-size: 7px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1px;
+}
+
+.research-node.researched .node-tier {
+    background-color: inherit;
+}
+
+.node-label {
+    font-size: 9px;
+    font-weight: bold;
+    color: #95a3ae;
+    text-align: center;
+    word-wrap: break-word;
+    max-width: 100%;
+    transition: color 0.2s ease;
+}
+
+.research-node.researched .node-label {
+    color: #ffffff;
+}
+
+/* Scrollbar styling */
+.panel-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.panel-content::-webkit-scrollbar-track {
+    background: #0d1014;
+}
+
+.panel-content::-webkit-scrollbar-thumb {
+    background: #2f3943;
+    border-radius: 4px;
+}
+
+.panel-content::-webkit-scrollbar-thumb:hover {
+    background: #3f4a53;
+}
+
+/* Faction accent colors */
+.faction.cabal {
+    border-color: #c44a4a;
+}
+
+.faction.cabal .faction-header {
+    border-bottom: 1px solid #c44a4a;
+}
+
+.faction.cabal .research-node.researched {
+    border-color: #c44a4a;
+}
+
+.faction.cabal .research-node.researched .node-tier {
+    background-color: #c44a4a;
+}
+
+.faction.imperia {
+    border-color: #d7ac47;
+}
+
+.faction.imperia .faction-header {
+    border-bottom: 1px solid #d7ac47;
+}
+
+.faction.imperia .research-node.researched {
+    border-color: #d7ac47;
+}
+
+.faction.imperia .research-node.researched .node-tier {
+    background-color: #d7ac47;
+}
+
+.faction.vesperin {
+    border-color: #57b662;
+}
+
+.faction.vesperin .faction-header {
+    border-bottom: 1px solid #57b662;
+}
+
+.faction.vesperin .research-node.researched {
+    border-color: #57b662;
+}
+
+.faction.vesperin .research-node.researched .node-tier {
+    background-color: #57b662;
+}

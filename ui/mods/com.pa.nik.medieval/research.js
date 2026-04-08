@@ -405,14 +405,7 @@ model.unlockPairs = [
 
     //Assassin speed upgrade
      ["/pa/units/medieval/upgrades/cabal/infantry/assassin.json",
-    ["/pa/units/medieval/infantry/assassin/assassin_upg.json"  
-                ],
-    ["/pa/units/medieval/infantry/assassin/assassin.json", "/pa/units/medieval/upgrades/cabal/infantry/assassin.json"],
-    true],
-
-    //Assassin speed upgrade
-     ["/pa/units/medieval/upgrades/cabal/infantry/assassin.json",
-    ["/pa/units/medieval/infantry/assassin/assassin_upg.json"  
+    ["/pa/units/medieval/infantry/assassin/assassin_upg.json"
                 ],
     ["/pa/units/medieval/infantry/assassin/assassin.json", "/pa/units/medieval/upgrades/cabal/infantry/assassin.json"],
     true],
@@ -1116,3 +1109,43 @@ model.playerArmy = function(playerId, planetId,unitType, stateFlag,unitTypeValue
 handlers.buildRestart = function(payload){//build ui has restarted so tell it what to lock again
     model.reLockUnits();
 }
+
+// ===== Research Map Panel Integration =====
+
+/**
+ * Helper function to get the current set of researched trigger specs.
+ * Deduplicates and returns only unique research/upgrade specs that have been completed.
+ */
+model.getResearchedTriggers = function() {
+    var researchedSet = {};
+    var armyPromise = model.allPlayerArmy(model.armyIndex());
+
+    return armyPromise.then(function(result) {
+        var armyKeys = _.keys(result);
+        console.log('[Research Tracker] Army has ' + armyKeys.length + ' unique specs');
+
+        // Iterate through unlockPairs to find what we've researched
+        var researchCount = 0;
+        model.unlockPairs.forEach(function(pair) {
+            var triggerSpec = pair[0];
+            var unlockedUnits = pair[1];
+
+            if (triggerSpec && triggerSpec.length > 0) {
+                // Check if trigger spec exists in army (means it was built/completed)
+                if (_.contains(armyKeys, triggerSpec)) {
+                    researchedSet[triggerSpec] = true;
+                    console.log('[Research Tracker] ✓ Researched:', triggerSpec);
+                    researchCount++;
+                }
+            }
+        });
+
+        var resultKeys = Object.keys(researchedSet);
+        console.log('[Research Tracker] Found ' + resultKeys.length + ' researched specs out of ' + model.unlockPairs.length + ' total pairs');
+        return resultKeys;
+    });
+};
+
+// requestResearchMapState handler is defined in research_live_game.js
+// (includes faction availability data alongside researched specs)
+
