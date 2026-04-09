@@ -153,6 +153,13 @@ function requestResearchMapInitialState() {
             }
         }, 1000);
     }
+
+    // Poll for state updates every 3 seconds to stay in sync
+    setInterval(function() {
+        if (api && api.Panel && api.Panel.parentId) {
+            api.Panel.message(api.Panel.parentId, 'requestResearchMapState');
+        }
+    }, 3000);
 }
 
 function renderResearchMapFactions() {
@@ -216,6 +223,10 @@ function renderResearchMapFactions() {
                     .text(node.label)
                     .appendTo(nodeDiv);
 
+                // Cross overlay (hidden when researched via CSS)
+                $('<div class="node-lock"></div>')
+                    .appendTo(nodeDiv);
+
                 if (researchMapState.researchedSpecs[node.spec_id]) {
                     nodeDiv.addClass('researched');
                 }
@@ -268,9 +279,9 @@ function updateResearchNodeStates() {
     });
 }
 
-// --- Message Handlers ---
+// --- Message Handlers (using PA framework's handlers object) ---
 
-api.Panel.setHandler('updateResearchMapState', function(payload) {
+handlers.updateResearchMapState = function(payload) {
     console.log('[Research Map] updateResearchMapState received');
 
     if (payload && payload.availableFactions) {
@@ -286,12 +297,13 @@ api.Panel.setHandler('updateResearchMapState', function(payload) {
     }
 
     renderResearchMapFactions();
-});
+};
 
-api.Panel.setHandler('unlockResearch', function(payload) {
+handlers.unlockResearch = function(payload) {
     if (!payload) return;
+    console.log('[Research Map] unlockResearch received:', payload);
     researchMapState.researchedSpecs[payload] = true;
     updateResearchNodeStates();
-});
+};
 
 console.log('[Research Map] script loaded');

@@ -181,8 +181,45 @@ body {
     z-index: 1;
 }
 
+/* X overlay on unresearched nodes — two diagonal bars */
+.research-node .node-lock {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.research-node .node-lock::before,
+.research-node .node-lock::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 140%;
+    height: 4px;
+    background-color: rgba(120, 130, 140, 0.55);
+    border-radius: 1px;
+}
+
+.research-node .node-lock::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.research-node .node-lock::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* Researched nodes: remove cross, restore color */
 .research-node.researched {
     background-color: #142228;
+}
+
+.research-node.researched .node-lock {
+    display: none;
 }
 
 .node-icon {
