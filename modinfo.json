@@ -4,9 +4,9 @@
 	"display_name": "Haunted Mayhem / Medieval Mode",
 	"description": "Adds 3 Medieval and Fantasy themed factions, each with unique units and playstyle",
 	"author": "NikolaMX",
-	"date": "2026-04-09",
+	"date": "2026-04-15",
 	"build": "124635",
-	"version": "1.0.7",
+	"version": "1.0.8",
 	"signature": "not yet implemented",
 	"forum": "https://steamcommunity.com/app/386070/discussions/0/805719856669440922/",
 	"icon": "https://i.imgur.com/jtTEm7Y.gif",
@@ -52,10 +52,8 @@
 	"dependencies": [
 		"medieval_mode_client"
 	],
-	"load_planet": [
-        "coui://ui/mods/medieval_mode_client/maplist.js"
-    ],
 	"companions": [
 		"medieval_mode_client"
+		"com.pa.nik.haunted-mayhem-maps"
 	]
 }
