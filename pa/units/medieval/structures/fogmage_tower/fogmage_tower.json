@@ -9,7 +9,6 @@
     "atrophy_rate": 80.0,
     "atrophy_cool_down": 15.0,
     "spawn_layers": "WL_AnySurface",
-    "area_build_type": "Sphere",
     "area_build_separation": 200,
     "unit_types": [
         "UNITTYPE_Land",
@@ -29,13 +28,6 @@
     "ORDER_Attack",
     "ORDER_Assist",
     "ORDER_Use"
-  ],
-        "replaceable_units": [
-        "/pa/units/medieval/structures/mana_shrine/mana_shrine.json"
-    ],
-  "force_snap_to_feature_orientation": true,
-   "feature_requirements": [
-    "energy_spot"
   ],
     "buildable_types": "Custom8 & FactoryBuild & Heavy & Tactical & Bomber",
     "rolloff_dirs": [
