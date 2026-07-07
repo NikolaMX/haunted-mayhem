@@ -9,21 +9,9 @@
     "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
      "max_health": 1000,
     "build_metal_cost": 400,
-    "feature_requirements": [
-        "energy_spot"
-    ],
-    "replaceable_units": [
 
-        "/pa/units/medieval/structures/arcmage_tower/arcmage_tower.json",
-        "/pa/units/medieval/structures/fogmage_tower/fogmage_tower.json",
-        "/pa/units/medieval/structures/firemage_tower/firemage_tower.json"
-     
-
-    ],
-    "force_snap_to_feature_orientation": true,
-    "area_build_type": "Sphere",
     "production": {
-        "energy": 50
+        "energy": 25
     },
     "strategic_icon_priority": 5,
     "consumption": {
