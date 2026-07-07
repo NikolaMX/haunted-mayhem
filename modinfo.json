@@ -53,7 +53,7 @@
 		"medieval_mode_client"
 	],
 	"companions": [
-		"medieval_mode_client"
+		"medieval_mode_client",
 		"com.pa.nik.haunted-mayhem-maps"
 	]
 }
